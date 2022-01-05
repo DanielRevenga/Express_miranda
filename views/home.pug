@@ -1,0 +1,212 @@
+extends layout 
+
+block content
+  
+    //  MAIN CONTENT 
+    main#home
+        //  MAIN CONTENT - HEADER 
+        section.mainContent_header
+            .subtitle The ultimate luxury experience
+            .title
+                | The perfect
+                br
+                | Base for you
+
+            .buttons
+                button.button.button_brown Take a tour
+                button.button.button_grey Learn more
+        //  MAIN CONTENT - BODY 
+        .mainContent_body
+            //  FORM AVAILABILITY 
+            form.form_availability
+                .form_control
+                    .label
+                        label(for='arrival_date') Check in
+                    .date.hide_mobile_off 24
+                    input.hide_mobile_on#arrival_date(type='date', name='arrival_date', placeholder='Set Arrival Date')
+                .form_control
+                    .label
+                        label(for='departure_date') Check out
+                    .date.hide_mobile_off 29
+                    input.hide_mobile_on#departure_date(type='date', name='departure_date', placeholder='Set Departure Date')
+                button.button.button_brown Book now
+            //  TOUR 
+            section.tour
+                .info
+                    .subtitle.colorGreyDark Take a tour
+                    .title Discover our underground.
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quidem in quasi, obcaecati, illum soluta modi veniam asperiores alias quos voluptas id fugit vitae quisquam recusandae minima repudiandae unde error.
+                    button.button.button_brown Book now
+                .video
+                    iframe(src='https://www.youtube.com/embed/Bu3Doe45lcU?start=25', title='YouTube video player', frameborder='0', allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture', allowfullscreen)
+            //  SERVICES 
+            section.services
+                .subtitle
+                    span.colorGreyDark Since
+                    |  
+                    span.colorBrown 1994
+                .title Situated in prime position at the foot of the slopes of couchevel moriond.
+                .container_icons
+                    .container_icon.top
+                        .icon
+                            img(src='../img/icons/coffee-cup.png', alt)
+                        div Breakfast
+                    .container_icon.middle
+                        .icon
+                            img(src='../img/icons/plane3.png', alt)
+                        div Airport pickup
+                    .container_icon.bottom
+                        .icon
+                            img(src='../img/icons/position.png', alt)
+                        div City guide
+                    .container_icon.middle
+                        .icon
+                            img(src='../img/icons/bbq.png', alt)
+                        div BBQ party
+                    .container_icon.top
+                        .icon
+                            img(src='../img/icons/room.png', alt)
+                        div Luxury room
+                .core_features_title Core Features
+                .container_offers
+                    .item.img.img1.
+                    
+                    
+                    .item
+                        .icon
+                            img(src='../img/icons/clock.png', alt)
+                        .title Quiet Hours
+                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, unde?
+                    .item.img.img2.
+                    
+                    
+                    .item
+                        .icon
+                            img(src='../img/icons/delete_clock.png', alt)
+                        .title Free Cancellation
+                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, unde?
+                    .item.img.img3.
+                    
+                    
+                    .item
+                        .icon
+                            //  <img src="../img/icons/percentage.png" alt=""> 
+                            img(src='../img/icons/percentage.png', alt)
+                        .title Special Offers
+                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, unde?
+            //  ROOM TYPE 
+            section.room_type
+                .subtitle Room type
+                .title Inspired lodging
+                ul
+                    li Luxury
+                    li Family
+                    li Double Bed
+                    li Relax
+                .room_grid
+                    .room.junior
+                        .subtitle
+                            i.far.fa-calendar-alt
+                                |  12 ROOMS
+                        .title Junior Suite
+                    .room.junior
+                        .subtitle
+                            i.far.fa-calendar-alt
+                                |  12 ROOMS
+                        .title Junior Suite
+                    .room.hallFame
+                        .subtitle
+                            i.far.fa-calendar-alt
+                                | 03 ROOMS
+                        .title Luxury Hall Of Fame
+            //  CALL TO ACTION 
+            section.call_action
+                .subtitle Call to action
+                .title The thin Escape
+                div
+                    .header
+                        .desc Miranda has everything for your trip & every single thing.
+                        .btn
+                            button.button.button_black Take a tour
+                    .actions_grid
+                        .container_icon
+                            .icon
+                                img(src='../img/icons/plane3.png', alt)
+                        div
+                            .title Easy & Free Transport
+                            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut fugit rem doloremque molestias quas ipsa modi, similique consectetur consequatur ad.
+                        .container_icon
+                            .icon
+                                img(src='../img/icons/burger_chips.png', alt)
+                        div
+                            .title Clean & Fresh Food
+                            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut fugit rem doloremque molestias quas ipsa modi, similique consectetur consequatur ad.
+                        .container_icon
+                            .icon
+                                img(src='../img/icons/pool_stairs.png', alt)
+                        div
+                            .title Play ground & Swimming Pool
+                            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut fugit rem doloremque molestias quas ipsa modi, similique consectetur consequatur ad.
+                    .footer_bar
+            //  TESTIMONIALS 
+            section.testimonials
+                .head
+                    .subtitle Testimonials
+                    .title Client feedback
+                .client_cards
+                    .client_card
+                        .img_container
+                            .check
+                                i.fas.fa-check
+                            img(src='../img/testimonials/portrait_1.jpg', alt)
+                        .name Rosalina D. William
+                        .role Founder, QUX CO.
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quaerat maxime unde atque dolorem corrupti.
+                    .client_card
+                        .img_container
+                            .check
+                                i.fas.fa-check
+                            img(src='../img/testimonials/portrait_2.jpg', alt)
+                        .name Donald H. Hilixer
+                        .role Founder, QUX CO.
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quaerat maxime unde atque dolorem corrupti.
+                .info.
+                   
+                    Each of our nine lovely double guest rooms feature a private bath, wi-fi, cable television and include full breakfast
+                
+            //  NEWS FEEDS 
+            section.new_feeds
+                .head
+                    .titles
+                        .subtitle Blog
+                        .title News Feeds
+                    .arrows
+                        .arrow.arrow_left
+                            i.fas.fa-arrow-left
+                        .arrow.arrow_right
+                            i.fas.fa-arrow-right
+                .body
+                    .body_item.item1
+                        .feed_img
+                        .content
+                            .subtitle
+                                div
+                                    i.far.fa-calendar-alt
+                                    |  23rd March 2019
+                                div
+                                    i.far.fa-user
+                                    |  By Admin
+                            .title Each of our 8 double rooms has its own distinct.
+                            p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio sit pariatur, dolore nisi labore corporis.
+                    .body_item.item2
+                        .feed_img
+                        .content
+                            .subtitle
+                                div
+                                    i.far.fa-calendar-alt
+                                        |  23rd March 2019
+                                div
+                                    i.far.fa-user
+                                        |  By Admin
+                            .title Each of our 8 double rooms has its own distinct.
+                            p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio sit pariatur, dolore nisi labore corporis.    

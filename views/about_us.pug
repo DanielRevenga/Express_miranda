@@ -1,0 +1,207 @@
+extends layout
+
+block content
+    // MAIN CONTENT - BODY
+    .mainContent_body
+        // PRESENTATION
+        section.presentation
+        .desc
+            | Hello, Out hotel has been present for over 20 years. We make the best for all our customers.
+        .video
+            iframe(src='https://www.youtube.com/embed/Bu3Doe45lcU?start=25' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+        // SERVICES
+        section.services
+        .container_icons
+            .container_icon
+            .icon.top
+                img(src='../img/icons/coffee-cup.png' alt='')
+            div Breakfast
+            .container_icon.middle
+            .icon
+                img(src='../img/icons/plane3.png' alt='')
+            div Airport pickup
+            .container_icon.bottom
+            .icon
+                img(src='../img/icons/position.png' alt='')
+            div City guide
+            .container_icon.middle
+            .icon
+                img(src='../img/icons/bbq.png' alt='')
+            div BBQ party
+            .container_icon.top
+            .icon
+                img(src='../img/icons/room.png' alt='')
+            div Luxury room
+        .container_offers
+            .item.img.img1
+            .item
+            .icon
+                img(src='../img/icons/clock.png' alt='')
+            .title Quiet Hours
+            p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, unde?
+            .item.img.img2
+            .item
+            .icon
+                img(src='../img/icons/delete_clock.png' alt='')
+            .title Free Cancellation
+            p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, unde?
+            .item.img.img3
+            .item
+            .icon
+                img(src='../img/icons/percentage.png' alt='')
+            .title Special Offers
+            p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, unde?
+        // COUNTER
+        section.counter
+        .head
+            .subtitle Counter
+            .title Some Fun Facts
+        .facts
+            .fact
+            .firstIcon
+                i.fas.fa-user-check.fa-fw
+            .text
+                .mainText 8000
+                .secondarytext Happy users
+            .lastIcon
+                i.fas.fa-long-arrow-alt-right
+            .fact
+            .firstIcon
+                i.fas.fa-thumbs-up
+            .text
+                .mainText 10 M
+                .secondarytext Reviews &amp; appreciate
+            .lastIcon
+                i.fas.fa-long-arrow-alt-right
+            .fact
+            .firstIcon
+                i.fas.fa-suitcase.fa-fw
+            .text
+                .mainText 100
+                .secondarytext Country coverage
+            .lastIcon
+                i.fas.fa-long-arrow-alt-right
+        // NEW FEEDS
+        section.new_feeds
+        .head
+            .titles
+            .subtitle Blog
+            .title News Feeds
+            .arrows
+            .arrow.arrow_left
+                i.fas.fa-arrow-left
+            .arrow.arrow_right
+                i.fas.fa-arrow-right
+        .body
+            .body_item.item1
+            .feed_img
+            .content
+                .subtitle
+                div
+                    i.far.fa-calendar-alt
+                    |  23rd March 2019
+                div
+                    i.far.fa-user
+                    |  By Admin
+                .title Each of our 8 double rooms has its own distinct.
+                p
+                | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
+                | sit pariatur, dolore nisi labore corporis.
+            .body_item.item2
+            .feed_img
+            .content
+                .subtitle
+                div
+                    i.far.fa-calendar-alt
+                    |  23rd March 2019
+                div
+                    i.far.fa-user
+                    |  By Admin
+                .title Each of our 8 double rooms has its own distinct.
+                p
+                | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
+                | sit pariatur, dolore nisi labore corporis.
+    // FOOTER
+    footer
+    // BODY
+    .body
+        .logo_section
+        .logo_title
+            .logo H
+            .title
+            span Hotel
+            |  Miranda
+        div
+            p
+            | Lorem ipsum dolor sit amet consectetur,
+            | adipisicing elit. Ducimus vel fuga perspiciatis
+            | excepturi nulla odio illo labore tenetur voluptates temporibus!
+        .services_section
+        .title Services.
+        ul
+            li
+            span +
+            |  Restaurant &amp; Bar
+            li
+            span +
+            |  Swimming Pool
+            li
+            span +
+            |  Wellness &amp; Spa
+            li
+            span +
+            |  Restaurant
+            li
+            span +
+            |  Conference Room
+            li
+            span +
+            |  Coctail Party House
+            li
+            span +
+            |  Gaming Zone
+            li
+            span +
+            |  Marrige Party
+            li
+            span +
+            |  Party Planning
+            li
+            span +
+            |  Tour Consultancy
+        .contactUs_section
+        .title Contact Us.
+        .contacts
+            .contact
+            .icon
+                i.fas.fa-phone-alt
+            .info_container
+                .title Phone Number
+                .info +987 876 765 76 577
+            .contact
+            .icon
+                i.fas.fa-envelope-open-text
+            .info_container
+                .title Email Address
+                .info info@webmail.com
+            .contact
+            .icon
+                i.fas.fa-map-marker-alt
+            .info_container
+                .title Office Address
+                .info 14/A, Miranda City, NYC
+    // COPYRIGHT
+    .copy
+        | copyright by@example
+    // RRSS
+    .rrss
+        div
+        i.fab.fa-facebook-f
+        div
+        i.fab.fa-twitter
+        div
+        i.fab.fa-instagram-square
+        div
+        i.fab.fa-linkedin
+        div
+        i.fab.fa-youtube
