@@ -1,213 +1,151 @@
-doctype html
-head
-  meta(charset='UTF-8')
-  meta(http-equiv='X-UA-Compatible' content='IE=edge')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  title Document
-  // CSS STYLES
-  link(rel='stylesheet' href='../css/styles.css')
-  // FONT AWESOME
-  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.15.4/css/all.css' integrity='sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm' crossorigin='anonymous')
-// HEADER
-header
-  nav
-    .bars(onclick="document.querySelectorAll('.animation').forEach((el) => el.classList.toggle('active'));")
-      i.fas.fa-bars
-    .drop_down.animation
-      ul.animation
-        li
-          a.button.button_brown(href='./about_us') About&nbsp;Us
-        li
-          a.button.button_brown(href='./room_grid') Rooms
-        li
-          a.button.button_brown(href='./reservation') Offers
-        li
-          a.button.button_brown(href='') News
-        li
-          a.button.button_brown(href='./contact_us') Contact
-      .container_logoH_nav
-        .logoH H
-        div
-          span.bold HOTEL
-          br
-          |                      MIRANDA
-      
-// MAIN CONTENT
-main.mainContent
-  // MAIN CONTENT - HEADER
-  section.mainContent_header
-    .overlap_main_header
-    .banner
-      .titles
-        .subtitle
-          | THE ULTIMATE LUXURY
-        .title
-          h1 Ultimate Room
-  // MAIN CONTENT - CONTACT DETAILS
-  section.contact_details.desktop
-    .details.address
-      .icon-grid
-        i.fas.fa-home
-      .text-grid
-        .title Office Address
-        .info
-          p 19/A Cirikon Citty hall Tower, New York, NYC
-    .details.phone
-      .icon-grid
-        i.fas.fa-phone
-      .text-grid
-        .title Phone Number
-        .info
-          p +97656 8675 7864 7
-          p +876 766 8575 765 6
-    .details.email
-      .icon-grid
-        i.fas.fa-mail-bulk
-      .text-grid
-        .title Email Address
-        .info
-          p info@webmail.com
-          p jobs.info@webmail.com
-  // MAIN CONTENT - MAP
-  .map.desktop
-    iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830929283!2d-74.11976365596463!3d40.697663748538346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva%20York%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1637499943335!5m2!1ses!2ses' style='border:0;' allowfullscreen='' loading='lazy')
-  // MAIN CONTENT - CONTACT FORM
-  section#contactForm
-    form#userContactForm(action='')
-      .input-container
-        .input_icon
-          i.fas.fa-user
-        input.input-field(type='text' placeholder='Your full name' name='fullName')
-      .input-container
-        .input_icon
-          i.fas.fa-envelope
-        input.input-field(type='text' placeholder='Enter e-mail address' name='email')
-      .input-container
-        .input_icon
-          i.fas.fa-phone
-        input.input-field(type='text' placeholder='Add phone number' name='phone')
-      .input-container
-        .input_icon
-          i.fas.fa-file
-        select.select-field(form='userForm' name='selectSubject')
-          option(disabled='' selected='') Select Subject
-          option(value='Option One') Option One
-          option(value='Option Two') Option Two
-          option(value='Option Three') Option Three
-      .textarea-container
-        .textarea_icon
-          i.fas.fa-pen
-        textarea.textArea(name='comment' form='userForm' rows='8' placeholder='Enter messages')
-      button.button.button_brown(type='button') GET FREE QUOTE
-  // MAIN CONTENT - CONTACT DETAILS
-  section.contact_details.noDesktop
-    .details.address
-      .icon-grid
-        i.fas.fa-home
-      .text-grid
-        .title Office Address
-        .info
-          p 19/A Cirikon Citty hall Tower, New York, NYC
-    .details.phone
-      .icon-grid
-        i.fas.fa-phone
-      .text-grid
-        .title Phone Number
-        .info
-          p +97656 8675 7864 7
-          p +876 766 8575 765 6
-    .details.email
-      .icon-grid
-        i.fas.fa-mail-bulk
-      .text-grid
-        .title Email Address
-        .info
-          p info@webmail.com
-          p jobs.info@webmail.com
-  // MAIN CONTENT - MAP
-  .map
-    iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830929283!2d-74.11976365596463!3d40.697663748538346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva%20York%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1637499943335!5m2!1ses!2ses' style='border:0;' allowfullscreen='' loading='lazy')
-// FOOTER
-footer
-  // BODY
-  .body
-    .logo_section
-      .logo_title
-        .logo H
-        .title
-          span Hotel
-          |  Miranda
-      div
-        p
-          | Lorem ipsum dolor sit amet consectetur,
-          | adipisicing elit. Ducimus vel fuga perspiciatis
-          | excepturi nulla odio illo labore tenetur voluptates temporibus!
-    .services_section
-      .title Services.
-      ul
-        li
-          span +
-          |  Restaurant &amp; Bar
-        li
-          span +
-          |  Swimming Pool
-        li
-          span +
-          |  Wellness &amp; Spa
-        li
-          span +
-          |  Restaurant
-        li
-          span +
-          |  Conference Room
-        li
-          span +
-          |  Coctail Party House
-        li
-          span +
-          |  Gaming Zone
-        li
-          span +
-          |  Marrige Party
-        li
-          span +
-          |  Party Planning
-        li
-          span +
-          |  Tour Consultancy
-    .contactUs_section
-      .title Contact Us.
-      .contacts
-        .contact
-          .icon
-            i.fas.fa-phone-alt
-          .info_container
-            .title Phone Number
-            .info +987 876 765 76 577
-        .contact
-          .icon
-            i.fas.fa-envelope-open-text
-          .info_container
-            .title Email Address
-            .info info@webmail.com
-        .contact
-          .icon
-            i.fas.fa-map-marker-alt
-          .info_container
-            .title Office Address
-            .info 14/A, Miranda City, NYC
-  // COPYRIGHT
-  .copy
-    | copyright by@example
-  // RRSS
-  .rrss
-    div
-      i.fab.fa-facebook-f
-    div
-      i.fab.fa-twitter
-    div
-      i.fab.fa-instagram-square
-    div
-      i.fab.fa-linkedin
-    div
-      i.fab.fa-youtube
+extends layout
+
+block content
+    body#contact
+        // MAIN CONTENT
+        main.mainContent
+            // MAIN CONTENT - HEADER
+            section.mainContent_header
+                .overlap_main_header
+                .banner
+                    .titles
+                        .subtitle
+                            | THE ULTIMATE LUXURY
+                        .title
+                            h1 Ultimate Room
+            // MAIN CONTENT - CONTACT DETAILS
+            section.contact_details.desktop
+                .details.address
+                    .icon-grid
+                        i.fas.fa-home
+                    .text-grid
+                        .title Office Address
+                        .info
+                            p 19/A Cirikon Citty hall Tower, New York, NYC
+                .details.phone
+                    .icon-grid
+                        i.fas.fa-phone
+                    .text-grid
+                        .title Phone Number
+                        .info
+                            p +97656 8675 7864 7
+                            p +876 766 8575 765 6
+                .details.email
+                    .icon-grid
+                        i.fas.fa-mail-bulk
+                    .text-grid
+                        .title Email Address
+                        .info
+                            p info@webmail.com
+                            p jobs.info@webmail.com
+            // MAIN CONTENT - MAP
+            //
+                <div class="map desktop">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830929283!2d-74.11976365596463!3d40.697663748538346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva%20York%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1637499943335!5m2!1ses!2ses"
+                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            .testing_map
+                .map_form
+                    label(for='inputDirection') Origin Direction:
+                    input#inputDirection(type='text' name='direction')
+                    button#submit(type='submit') Search
+                .map_info
+                    div
+                        | Origin: 
+                        span#origin
+                    div
+                        | Destination: 
+                        span#destination
+                    div
+                        | Distance: 
+                        span#distance
+                    div
+                        | Duration: 
+                        span#duration
+                .map_form2
+                    label(for='a') Select Area: 
+                    select#ac_select(name='ac')
+                        option(value='')
+                        option(value='andalucia') Andalucía
+                        option(value='aragon') Aragon
+                        option(value='asturias') Asturias
+                        option(value='islas_baleares') Islas baleares
+                        option(value='canarias') Canarias
+                        option(value='cantabria') Cantabria
+                        option(value='castilla_la_mancha') Castilla la mancha
+                        option(value='castilla_y_leon') Castilla y leon
+                        option(value='cataluna') Cataluña
+                        option(value='valencia') Valencia
+                        option(value='extremadura') Extremadura
+                        option(value='galicia') Galicia
+                        option(value='la_rioja') La_rioja
+                        option(value='madrid') Madrid
+                        option(value='murcia') Murcia
+                        option(value='navarra') Navarra
+                        option(value='pais_vasco') Pais vasco
+                    // <button type="submit" id="submit_form2">Select AC</button>
+            #google_map.map.desktop
+            // MAIN CONTENT - CONTACT FORM
+            section#contactForm
+                form#userContactForm(action='')
+                    .input-container
+                        .input_icon
+                            i.fas.fa-user
+                        input.input-field(type='text' placeholder='Your full name' name='fullName')
+                    .input-container
+                        .input_icon
+                            i.fas.fa-envelope
+                        input.input-field(type='text' placeholder='Enter e-mail address' name='email')
+                    .input-container
+                        .input_icon
+                            i.fas.fa-phone
+                        input.input-field(type='text' placeholder='Add phone number' name='phone')
+                    .input-container
+                        .input_icon
+                            i.fas.fa-file
+                        select.select-field(form='userForm' name='selectSubject')
+                            option(disabled='' selected='') Select Subject
+                            option(value='Option One') Option One
+                            option(value='Option Two') Option Two
+                            option(value='Option Three') Option Three
+                    .textarea-container
+                        .textarea_icon
+                            i.fas.fa-pen
+                        textarea.textArea(name='comment' form='userForm' rows='8' placeholder='Enter messages')
+                    button.button.button_brown(type='button') GET FREE QUOTE
+            // MAIN CONTENT - CONTACT DETAILS
+            section.contact_details.noDesktop
+                .details.address
+                    .icon-grid
+                        i.fas.fa-home
+                    .text-grid
+                        .title Office Address
+                        .info
+                            p 19/A Cirikon Citty hall Tower, New York, NYC
+                .details.phone
+                    .icon-grid
+                        i.fas.fa-phone
+                    .text-grid
+                        .title Phone Number
+                        .info
+                            p +97656 8675 7864 7
+                            p +876 766 8575 765 6
+                .details.email
+                    .icon-grid
+                        i.fas.fa-mail-bulk
+                    .text-grid
+                        .title Email Address
+                        .info
+                            p info@webmail.com
+                            p jobs.info@webmail.com
+            // MAIN CONTENT - MAP
+            //
+                <div class="map">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830929283!2d-74.11976365596463!3d40.697663748538346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva%20York%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1637499943335!5m2!1ses!2ses"
+                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            //
+                <div class="map">
+                </div>

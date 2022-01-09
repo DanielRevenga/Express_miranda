@@ -1,361 +1,225 @@
-doctype html
-head
-  meta(charset='UTF-8')
-  meta(http-equiv='X-UA-Compatible' content='IE=edge')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  title Document
-  // CSS STYLES
-  link(rel='stylesheet' href='../css/styles.css')
-  // FONT AWESOME
-  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.15.4/css/all.css' integrity='sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm' crossorigin='anonymous')
-// HEADER
-header
-  nav
-    .bars(onclick="document.querySelectorAll('.animation').forEach((el) => el.classList.toggle('active'));")
-      i.fas.fa-bars
-    .drop_down.animation
-      ul.animation
-        li
-          a.button.button_brown(href='./about_us') About&nbsp;Us
-        li
-          a.button.button_brown(href='./room_grid') Rooms
-        li
-          a.button.button_brown(href='./reservation') Offers
-        li
-          a.button.button_brown(href='') News
-        li
-          a.button.button_brown(href='./contact_us') Contact
-      .container_logoH_nav
-        .logoH H
-        div
-          span.bold HOTEL
-          br
-          |                     MIRANDA
-      .container_headerInfo
-        .info_container.container_headerInfo_phone
-          .info
-            .title Phone Number
-            .data +908 987 877 09
-          .fakeIcon
-            .fakeIcon_top
-              i.fas.fa-phone
-        .info_container.container_headerInfo_email
-          .info
-            .title Email Address
-            .data info@webmail.com
-          .fakeIcon
-            .fakeIcon_top
-              i.fas.fa-envelope
-  .container_logoH
-    // <div class="logoH">H</div>
-    div
-      span.bold HOTEL
-      br
-      |               MIRANDA
-// MAIN CONTENT
-main.mainContent
-  // MAIN CONTENT - HEADER
-  section.mainContent_header
-    .subtitle
-      | The ultimate luxury
-    .title
-      | Ultimate Room
-    .secondary_nav
-      div
-        span
-          a(href='') Home
-          |  |
-        a(href='') Room Details
-  // HEADER 2 + AVAILABILITY
-  section.header2_availability
-    // MAIN CONTENT - HEADER 2
-    section.mainContent_header2
-      .extra-banner
-        .title
-          h1 Luxury Double Bed
-        .price
-          p
-            | $345
-            span.price-info /Night
-    // MAIN CONTENT - AVAILABILITY
-    section.availability
-      .check-subtitle
-        .line
-        h5 Check Availability
-      form(action='')
-        .check-in.form-control
-          label(for='checkIn') Check In
-          input.checkIn(name='checkIn' type='date' placeholder='Check in')
-        .check-out.form-control
-          label(for='checkOut') Check Out
-          input.checkOut(name='checkOut' type='date' placeholder='Check out')
-        .first_name.form-control
-          label(for='first_name') Fisrt Name
-          input.first_name(name='first_name' type='text' placeholder='First name')
-        .last_name.form-control
-          label(for='last_name') Last name
-          input.last_name(name='last_name' type='text' placeholder='Last name')
-        .email.form-control
-          label(for='email') Email
-          input.email(name='email' type='email' placeholder='Email')
-        .tlf.form-control
-          label(for='tlf') Tlf
-          input.tlf(name='tlf' type='number' placeholder='Tlf')
-        .comment.form-control.textarea-control
-          label(for='comment') Comment
-          textarea#comment(name='comment' cols='30' rows='5' placeholder='Comment')
-      .check-button
-        button.checkButton(type='button') CHECK AVAILABILITY
-  // ARTICLE
-  section.article
-    p
-      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis inventore rem quibusdam perspiciatis
-      | facilis delectus eum veniam explicabo libero, magnam reprehenderit consectetur dicta sit ratione, optio
-      | porro tempora rerum tempore, voluptate nemo? Doloribus soluta facilis ea animi voluptatem iusto eius
-      | reiciendis ipsam dolor unde, ut, deserunt deleniti! Temporibus alias tenetur aperiam reprehenderit!
-  // AMENITIES
-  section.amenities-section
-    h4 Amenities
-    hr
-    .amenities
-      .column-one
-        .icon-grid
-          i.fas.fa-fan
-        .text-grid
-          p Air conditioner
-        .icon-grid
-          i.fas.fa-coffee
-        .text-grid
-          p Breakfast
-        .icon-grid
-          i.fas.fa-broom
-        .text-grid
-          p Cleaning
-        .icon-grid
-          i.fas.fa-shopping-basket
-        .text-grid
-          p Grocery
-        .icon-grid
-          i.fas.fa-store-alt
-        .text-grid
-          p Shop Near
-      .column-two
-        .icon-grid
-          i.fas.fa-wifi
-        .text-grid
-          p High speed WiFi
-        .icon-grid
-          i.fas.fa-sink
-        .text-grid
-          p Kitchen
-        .icon-grid
-          i.fas.fa-shower
-        .text-grid
-          p Shower
-        .icon-grid
-          i.fas.fa-bed
-        .text-grid
-          p Single bed
-        .icon-grid
-          i.fas.fa-ticket-alt
-        .text-grid
-          p Towels
-      .column-three
-        .icon-grid
-          i.fas.fa-lock
-        .text-grid
-          p Strong Locker
-        .icon-grid
-          i.fas.fa-laptop-house
-        .text-grid
-          p Smart Security
-        .icon-grid
-          i.fab.fa-teamspeak
-        .text-grid
-          p 24/7 Online Support
-        .icon-grid
-          i.fas.fa-users-cog
-        .text-grid
-          p Expert Team
-  // TESTIMONIALS
-  section.testimonials
-    .head
-      .subtitle Testimonials
-      .title Client feedback
-    .client_cards
-      .client_card
-        .img_container
-          .check
-            i.fas.fa-check
-          img(src='../img/testimonials/portrait_1.jpg' alt='')
-        .name Rosalina D. William
-        .role Founder, QUX CO.
-        p
-          | Lorem ipsum dolor sit amet consectetur
-          | adipisicing elit. Amet quaerat maxime unde
-          | atque dolorem corrupti.
-      .client_card
-        .img_container
-          .check
-            i.fas.fa-check
-          img(src='../img/testimonials/portrait_2.jpg' alt='')
-        .name Donald H. Hilixer
-        .role Founder, QUX CO.
-        p
-          | Lorem ipsum dolor sit amet consectetur
-          | adipisicing elit. Amet quaerat maxime unde
-          | atque dolorem corrupti.
-    .info
-      | Each of our nine lovely double guest rooms feature a private
-      | bath, wi-fi, cable televisiion and include full breakfast
-  // CANCELATION
-  section.cancelation
-    h4 Cancellation
-    hr
-    p
-      | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti laborum consequuntur earum? Tenetur,
-      | ut. Iure nemo laboriosam facilis ratione at laudantium debitis
-  // MAP
-  section.map
-    iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830929283!2d-74.11976365596463!3d40.697663748538346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva%20York%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1637499943335!5m2!1ses!2ses' style='border:0;' allowfullscreen='' loading='lazy')
-  // RELATED ROOMS
-  section.related_rooms
-    h2 Related Rooms
-    .related_room
-      .room-image
-        .icons-bar
-          ul
-            li
-              i.fas.fa-bed
-            li
-              i.fas.fa-wifi
-            li
-              i.fas.fa-car-side
-            li
-              i.fas.fa-coffee
-            li
-              i.fas.fa-utensils
-            li
-              i.fas.fa-shower
-            li
-              i.fas.fa-tv
-      .room_footer
-        h3 Minimal Duplex Room
-        p
-          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa molestiae esse tempore quo
-        .info
-          .price
-            | $345
-            span /Night
-          .booking Booking Now
-    .related_room
-      .room-image
-        .icons-bar
-          ul
-            li
-              i.fas.fa-bed
-            li
-              i.fas.fa-wifi
-            li
-              i.fas.fa-car-side
-            li
-              i.fas.fa-coffee
-            li
-              i.fas.fa-utensils
-            li
-              i.fas.fa-shower
-            li
-              i.fas.fa-tv
-      .room_footer
-        h3 Minimal Duplex Room
-        p
-          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa molestiae esse tempore quo
-        .info
-          .price
-            | $345
-            span /Night
-          .booking Booking Now
-// FOOTER
-footer
-  // BODY
-  .body
-    .logo_section
-      .logo_title
-        .logo H
-        .title
-          span Hotel
-          |  Miranda
-      div
-        p
-          | Lorem ipsum dolor sit amet consectetur,
-          | adipisicing elit. Ducimus vel fuga perspiciatis
-          | excepturi nulla odio illo labore tenetur voluptates temporibus!
-    .services_section
-      .title Services.
-      ul
-        li
-          span +
-          |  Restaurant &amp; Bar
-        li
-          span +
-          |  Swimming Pool
-        li
-          span +
-          |  Wellness &amp; Spa
-        li
-          span +
-          |  Restaurant
-        li
-          span +
-          |  Conference Room
-        li
-          span +
-          |  Coctail Party House
-        li
-          span +
-          |  Gaming Zone
-        li
-          span +
-          |  Marrige Party
-        li
-          span +
-          |  Party Planning
-        li
-          span +
-          |  Tour Consultancy
-    .contactUs_section
-      .title Contact Us.
-      .contacts
-        .contact
-          .icon
-            i.fas.fa-phone-alt
-          .info_container
-            .title Phone Number
-            .info +987 876 765 76 577
-        .contact
-          .icon
-            i.fas.fa-envelope-open-text
-          .info_container
-            .title Email Address
-            .info info@webmail.com
-        .contact
-          .icon
-            i.fas.fa-map-marker-alt
-          .info_container
-            .title Office Address
-            .info 14/A, Miranda City, NYC
-  // COPYRIGHT
-  .copy
-    | copyright by@example
-  // RRSS
-  .rrss
-    div
-      i.fab.fa-facebook-f
-    div
-      i.fab.fa-twitter
-    div
-      i.fab.fa-instagram-square
-    div
-      i.fab.fa-linkedin
-    div
-      i.fab.fa-youtube
+extends layout
+
+block content
+    body#reservation
+        // MAIN CONTENT
+        main.mainContent
+            // MAIN CONTENT - HEADER
+            section.mainContent_header
+                .subtitle The ultimate luxury
+                .title Ultimate Room
+                .secondary_nav
+                    div
+                        span
+                            a(href='') Home
+                            |  |
+                        a(href='') Room Details
+            // HEADER 2 + AVAILABILITY
+            section.header2_availability
+                // MAIN CONTENT - HEADER 2
+                section.mainContent_header2
+                    .extra-banner
+                        .title
+                            h1 Luxury Double Bed
+                        .price
+                            p
+                                | $345
+                                span.price-info /Night
+                // MAIN CONTENT - AVAILABILITY
+                section.availability
+                    .check-subtitle
+                        .line
+                        h5 Check Availability
+                    form(action='')
+                        .check-in.form-control
+                            label(for='checkIn') Check In
+                            input.checkIn(name='checkIn' type='date' placeholder='Check in')
+                        .check-out.form-control
+                            label(for='checkOut') Check Out
+                            input.checkOut(name='checkOut' type='date' placeholder='Check out')
+                        .first_name.form-control
+                            label(for='first_name') Fisrt Name
+                            input.first_name(name='first_name' type='text' placeholder='First name')
+                        .last_name.form-control
+                            label(for='last_name') Last name
+                            input.last_name(name='last_name' type='text' placeholder='Last name')
+                        .email.form-control
+                            label(for='email') Email
+                            input.email(name='email' type='email' placeholder='Email')
+                        .tlf.form-control
+                            label(for='tlf') Tlf
+                            input.tlf(name='tlf' type='number' placeholder='Tlf')
+                        .comment.form-control.textarea-control
+                            label(for='comment') Comment
+                            textarea#comment(name='comment' cols='30' rows='5' placeholder='Comment')
+                    .check-button
+                        button.checkButton(type='button') CHECK AVAILABILITY
+            // ARTICLE
+            section.article
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis inventore rem quibusdam perspiciatis
+                    | facilis delectus eum veniam explicabo libero, magnam reprehenderit consectetur dicta sit ratione, optio
+                    | porro tempora rerum tempore, voluptate nemo? Doloribus soluta facilis ea animi voluptatem iusto eius
+                    | reiciendis ipsam dolor unde, ut, deserunt deleniti! Temporibus alias tenetur aperiam reprehenderit!
+            // AMENITIES
+            section.amenities-section
+                h4 Amenities
+                hr
+                .amenities
+                    .column-one
+                        .icon-grid
+                            i.fas.fa-fan
+                        .text-grid
+                            p Air conditioner
+                        .icon-grid
+                            i.fas.fa-coffee
+                        .text-grid
+                            p Breakfast
+                        .icon-grid
+                            i.fas.fa-broom
+                        .text-grid
+                            p Cleaning
+                        .icon-grid
+                            i.fas.fa-shopping-basket
+                        .text-grid
+                            p Grocery
+                        .icon-grid
+                            i.fas.fa-store-alt
+                        .text-grid
+                            p Shop Near
+                    .column-two
+                        .icon-grid
+                            i.fas.fa-wifi
+                        .text-grid
+                            p High speed WiFi
+                        .icon-grid
+                            i.fas.fa-sink
+                        .text-grid
+                            p Kitchen
+                        .icon-grid
+                            i.fas.fa-shower
+                        .text-grid
+                            p Shower
+                        .icon-grid
+                            i.fas.fa-bed
+                        .text-grid
+                            p Single bed
+                        .icon-grid
+                            i.fas.fa-ticket-alt
+                        .text-grid
+                            p Towels
+                    .column-three
+                        .icon-grid
+                            i.fas.fa-lock
+                        .text-grid
+                            p Strong Locker
+                        .icon-grid
+                            i.fas.fa-laptop-house
+                        .text-grid
+                            p Smart Security
+                        .icon-grid
+                            i.fab.fa-teamspeak
+                        .text-grid
+                            p 24/7 Online Support
+                        .icon-grid
+                            i.fas.fa-users-cog
+                        .text-grid
+                            p Expert Team
+            // TESTIMONIALS
+            section.testimonials
+                .head
+                    .subtitle Testimonials
+                    .title Client feedback
+                .client_cards
+                    .client_card
+                        .img_container
+                            .check
+                                i.fas.fa-check
+                            img(src='images/testimonials/portrait_1.jpg' alt='')
+                        .name Rosalina D. William
+                        .role Founder, QUX CO.
+                        p
+                            | Lorem ipsum dolor sit amet consectetur
+                            | adipisicing elit. Amet quaerat maxime unde
+                            | atque dolorem corrupti.
+                    .client_card
+                        .img_container
+                            .check
+                                i.fas.fa-check
+                            img(src='images/testimonials/portrait_2.jpg' alt='')
+                        .name Donald H. Hilixer
+                        .role Founder, QUX CO.
+                        p
+                            | Lorem ipsum dolor sit amet consectetur
+                            | adipisicing elit. Amet quaerat maxime unde
+                            | atque dolorem corrupti.
+                .info
+                    | Each of our nine lovely double guest rooms feature a private
+                    | bath, wi-fi, cable televisiion and include full breakfast
+            // CANCELATION
+            section.cancelation
+                h4 Cancellation
+                hr
+                p
+                    | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti laborum consequuntur earum? Tenetur,
+                    | ut. Iure nemo laboriosam facilis ratione at laudantium debitis
+            // MAP
+            section.map
+                iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830929283!2d-74.11976365596463!3d40.697663748538346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva%20York%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1637499943335!5m2!1ses!2ses' style='border:0;' allowfullscreen='' loading='lazy')
+            // RELATED ROOMS
+            section.related_rooms
+                h2 Related Rooms
+                .related_room
+                    .room-image
+                        .icons-bar
+                            ul
+                                li
+                                    i.fas.fa-bed
+                                li
+                                    i.fas.fa-wifi
+                                li
+                                    i.fas.fa-car-side
+                                li
+                                    i.fas.fa-coffee
+                                li
+                                    i.fas.fa-utensils
+                                li
+                                    i.fas.fa-shower
+                                li
+                                    i.fas.fa-tv
+                    .room_footer
+                        h3 Minimal Duplex Room
+                        p
+                            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa molestiae esse tempore quo
+                        .info
+                            .price
+                                | $345
+                                span /Night
+                            .booking Booking Now
+                .related_room
+                    .room-image
+                        .icons-bar
+                            ul
+                                li
+                                    i.fas.fa-bed
+                                li
+                                    i.fas.fa-wifi
+                                li
+                                    i.fas.fa-car-side
+                                li
+                                    i.fas.fa-coffee
+                                li
+                                    i.fas.fa-utensils
+                                li
+                                    i.fas.fa-shower
+                                li
+                                    i.fas.fa-tv
+                    .room_footer
+                        h3 Minimal Duplex Room
+                        p
+                            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa molestiae esse tempore quo
+                        .info
+                            .price
+                                | $345
+                                span /Night
+                            .booking Booking Now

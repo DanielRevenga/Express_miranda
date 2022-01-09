@@ -1,465 +1,309 @@
-doctype html
-head
-  meta(charset='UTF-8')
-  meta(http-equiv='X-UA-Compatible' content='IE=edge')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  title Document
-  // CSS STYLES
-  link(rel='stylesheet' href='../css/styles.css')
-  // FONT AWESOME
-  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.15.4/css/all.css' integrity='sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm' crossorigin='anonymous')
-// HEADER
-header
-  nav
-    .bars(onclick="document.querySelectorAll('.animation').forEach((el) => el.classList.toggle('active'));")
-      i.fas.fa-bars
-    .drop_down.animation
-      ul.animation
-        li
-          a.button.button_brown(href='./about_us') About&nbsp;Us
-        li
-          a.button.button_brown(href='./room_grid') Rooms
-        li
-          a.button.button_brown(href='./reservation') Offers
-        li
-          a.button.button_brown(href='') News
-        li
-          a.button.button_brown(href='./contact_us') Contact
-      .container_logoH_nav
-        .logoH H
-        div
-          span.bold HOTEL
-          br
-          |                   MIRANDA
-      .container_headerInfo
-        .info_container.container_headerInfo_phone
-          .info
-            .title Phone Number
-            .data +908 987 877 09
-          .fakeIcon
-            .fakeIcon_top
-              i.fas.fa-phone
-        .info_container.container_headerInfo_email
-          .info
-            .title Email Address
-            .data info@webmail.com
-          .fakeIcon
-            .fakeIcon_top
-              i.fas.fa-envelope
-  .container_logoH
-    // <div class="logoH">H</div>
-    div
-      span.bold HOTEL
-      br
-      |             MIRANDA
-  //
-    <div class="container_headerInfo">
-    <div class="container_headerInfo_phone">
-    <div class="fakeIcon">
-    <div class="fakeIcon_top">phone</div>
-    </div>
-    <div class="info">
-    <div>Phone Numbe</div>
-    <div>+908 987 877 09</div>
-    </div>
-    </div>
-    <div class="container_headerInfo_email">
-    <div class="fakeIcon">
-    <div class="fakeIcon_top">envelope</div>
-    </div>
-    <div class="info">
-    <div>Email Address</div>
-    <div>info@webmail.com</div>
-    </div>
-    </div>
-    </div>
-// MAIN CONTENT
-main#room_grid
-  // MAIN CONTENT - HEADER
-  section.mainContent_header
-    .subtitle
-      | The ultimate luxury
-    .title
-      | Ultimate Room
-    .secondary_nav
-      div
-        span
-          a(href='') Home
-          |  |
-        a(href='') Rooms
-  // MAIN CONTENT - BODY
-  .mainContent_body
-    // ROOMS
-    section.rooms
-      // ROOM
-      .room
-        .room_img
-        .room_body
-          .icon_list
-            ul
-              li
-                i.fas.fa-bed
-              li
-                i.fas.fa-wifi
-              li
-                i.fas.fa-car-side
-              li
-                i.fas.fa-coffee
-              li
-                i.fas.fa-utensils
-              li
-                i.fas.fa-shower
-              li
-                i.fas.fa-tv
-          .body_info
-            .title Minimal Duplex Room
-            p
-              | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              | Quis inventore voluptatem nesciunt accusamus provident
-              | aspernatur velit assumenda porro iure unde.
-        .extra_info
-          .price
-            | $345
-            span /Night
-          .hl
-          .booking Booking Now
-      // ROOM
-      .room
-        .room_img
-        .room_body
-          .icon_list
-            ul
-              li
-                i.fas.fa-bed
-              li
-                i.fas.fa-wifi
-              li
-                i.fas.fa-car-side
-              li
-                i.fas.fa-coffee
-              li
-                i.fas.fa-utensils
-              li
-                i.fas.fa-shower
-              li
-                i.fas.fa-tv
-          .body_info
-            .title Minimal Duplex Room
-            p
-              | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              | Quis inventore voluptatem nesciunt accusamus provident
-              | aspernatur velit assumenda porro iure unde.
-        .extra_info
-          .price
-            | $345
-            span /Night
-          .hl
-          .booking Booking Now
-      // ROOM
-      .room
-        .room_img
-        .room_body
-          .icon_list
-            ul
-              li
-                i.fas.fa-bed
-              li
-                i.fas.fa-wifi
-              li
-                i.fas.fa-car-side
-              li
-                i.fas.fa-coffee
-              li
-                i.fas.fa-utensils
-              li
-                i.fas.fa-shower
-              li
-                i.fas.fa-tv
-          .body_info
-            .title Minimal Duplex Room
-            p
-              | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              | Quis inventore voluptatem nesciunt accusamus provident
-              | aspernatur velit assumenda porro iure unde.
-        .extra_info
-          .price
-            | $345
-            span /Night
-          .hl
-          .booking Booking Now
-      // ROOM
-      .room
-        .room_img
-        .room_body
-          .icon_list
-            ul
-              li
-                i.fas.fa-bed
-              li
-                i.fas.fa-wifi
-              li
-                i.fas.fa-car-side
-              li
-                i.fas.fa-coffee
-              li
-                i.fas.fa-utensils
-              li
-                i.fas.fa-shower
-              li
-                i.fas.fa-tv
-          .body_info
-            .title Minimal Duplex Room
-            p
-              | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              | Quis inventore voluptatem nesciunt accusamus provident
-              | aspernatur velit assumenda porro iure unde.
-        .extra_info
-          .price
-            | $345
-            span /Night
-          .hl
-          .booking Booking Now
-      // ROOM
-      .room
-        .room_img
-        .room_body
-          .icon_list
-            ul
-              li
-                i.fas.fa-bed
-              li
-                i.fas.fa-wifi
-              li
-                i.fas.fa-car-side
-              li
-                i.fas.fa-coffee
-              li
-                i.fas.fa-utensils
-              li
-                i.fas.fa-shower
-              li
-                i.fas.fa-tv
-          .body_info
-            .title Minimal Duplex Room
-            p
-              | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              | Quis inventore voluptatem nesciunt accusamus provident
-              | aspernatur velit assumenda porro iure unde.
-        .extra_info
-          .price
-            | $345
-            span /Night
-          .hl
-          .booking Booking Now
-      // ROOM
-      .room
-        .room_img
-        .room_body
-          .icon_list
-            ul
-              li
-                i.fas.fa-bed
-              li
-                i.fas.fa-wifi
-              li
-                i.fas.fa-car-side
-              li
-                i.fas.fa-coffee
-              li
-                i.fas.fa-utensils
-              li
-                i.fas.fa-shower
-              li
-                i.fas.fa-tv
-          .body_info
-            .title Minimal Duplex Room
-            p
-              | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              | Quis inventore voluptatem nesciunt accusamus provident
-              | aspernatur velit assumenda porro iure unde.
-        .extra_info
-          .price
-            | $345
-            span /Night
-          .hl
-          .booking Booking Now
-      // ROOM
-      .room
-        .room_img
-        .room_body
-          .icon_list
-            ul
-              li
-                i.fas.fa-bed
-              li
-                i.fas.fa-wifi
-              li
-                i.fas.fa-car-side
-              li
-                i.fas.fa-coffee
-              li
-                i.fas.fa-utensils
-              li
-                i.fas.fa-shower
-              li
-                i.fas.fa-tv
-          .body_info
-            .title Minimal Duplex Room
-            p
-              | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              | Quis inventore voluptatem nesciunt accusamus provident
-              | aspernatur velit assumenda porro iure unde.
-        .extra_info
-          .price
-            | $345
-            span /Night
-          .hl
-          .booking Booking Now
-      // ROOM
-      .room
-        .room_img
-        .room_body
-          .icon_list
-            ul
-              li
-                i.fas.fa-bed
-              li
-                i.fas.fa-wifi
-              li
-                i.fas.fa-car-side
-              li
-                i.fas.fa-coffee
-              li
-                i.fas.fa-utensils
-              li
-                i.fas.fa-shower
-              li
-                i.fas.fa-tv
-          .body_info
-            .title Minimal Duplex Room
-            p
-              | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              | Quis inventore voluptatem nesciunt accusamus provident
-              | aspernatur velit assumenda porro iure unde.
-        .extra_info
-          .price
-            | $345
-            span /Night
-          .hl
-          .booking Booking Now
-      // ROOM
-      .room
-        .room_img
-        .room_body
-          .icon_list
-            ul
-              li
-                i.fas.fa-bed
-              li
-                i.fas.fa-wifi
-              li
-                i.fas.fa-car-side
-              li
-                i.fas.fa-coffee
-              li
-                i.fas.fa-utensils
-              li
-                i.fas.fa-shower
-              li
-                i.fas.fa-tv
-          .body_info
-            .title Minimal Duplex Room
-            p
-              | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              | Quis inventore voluptatem nesciunt accusamus provident
-              | aspernatur velit assumenda porro iure unde.
-        .extra_info
-          .price
-            | $345
-            span /Night
-          .hl
-          .booking Booking Now
-// FOOTER
-footer
-  // BODY
-  .body
-    .logo_section
-      .logo_title
-        .logo H
-        .title
-          span Hotel
-          |  Miranda
-      div
-        p
-          | Lorem ipsum dolor sit amet consectetur,
-          | adipisicing elit. Ducimus vel fuga perspiciatis
-          | excepturi nulla odio illo labore tenetur voluptates temporibus!
-    .services_section
-      .title Services.
-      ul
-        li
-          span +
-          |  Restaurant &amp; Bar
-        li
-          span +
-          |  Swimming Pool
-        li
-          span +
-          |  Wellness &amp; Spa
-        li
-          span +
-          |  Restaurant
-        li
-          span +
-          |  Conference Room
-        li
-          span +
-          |  Coctail Party House
-        li
-          span +
-          |  Gaming Zone
-        li
-          span +
-          |  Marrige Party
-        li
-          span +
-          |  Party Planning
-        li
-          span +
-          |  Tour Consultancy
-    .contactUs_section
-      .title Contact Us.
-      .contacts
-        .contact
-          .icon
-            i.fas.fa-phone-alt
-          .info_container
-            .title Phone Number
-            .info +987 876 765 76 577
-        .contact
-          .icon
-            i.fas.fa-envelope-open-text
-          .info_container
-            .title Email Address
-            .info info@webmail.com
-        .contact
-          .icon
-            i.fas.fa-map-marker-alt
-          .info_container
-            .title Office Address
-            .info 14/A, Miranda City, NYC
-  // COPYRIGHT
-  .copy
-    | copyright by@example
-  // RRSS
-  .rrss
-    div
-      i.fab.fa-facebook-f
-    div
-      i.fab.fa-twitter
-    div
-      i.fab.fa-instagram-square
-    div
-      i.fab.fa-linkedin
-    div
-      i.fab.fa-youtube
+extends layout
+
+block content
+    // MAIN CONTENT
+    main#room_grid
+        // MAIN CONTENT - HEADER
+        section.mainContent_header
+            .subtitle
+                | The ultimate luxury
+            .title
+                | Ultimate Room
+            .secondary_nav
+                div
+                    span
+                        a(href='') Home
+                        |  |
+                    a(href='') Rooms
+        // MAIN CONTENT - BODY
+        .mainContent_body
+            // ROOMS
+            section.rooms
+                // ROOM
+                .room
+                    .room_img
+                    .room_body
+                        .icon_list
+                            ul
+                                li
+                                    i.fas.fa-bed
+                                li
+                                    i.fas.fa-wifi
+                                li
+                                    i.fas.fa-car-side
+                                li
+                                    i.fas.fa-coffee
+                                li
+                                    i.fas.fa-utensils
+                                li
+                                    i.fas.fa-shower
+                                li
+                                    i.fas.fa-tv
+                        .body_info
+                            .title Minimal Duplex Room
+                            p
+                                | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                | Quis inventore voluptatem nesciunt accusamus provident
+                                | aspernatur velit assumenda porro iure unde.
+                    .extra_info
+                        .price
+                            | $345
+                            span /Night
+                        .hl
+                        .booking Booking Now
+                // ROOM
+                .room
+                    .room_img
+                    .room_body
+                        .icon_list
+                            ul
+                                li
+                                    i.fas.fa-bed
+                                li
+                                    i.fas.fa-wifi
+                                li
+                                    i.fas.fa-car-side
+                                li
+                                    i.fas.fa-coffee
+                                li
+                                    i.fas.fa-utensils
+                                li
+                                    i.fas.fa-shower
+                                li
+                                    i.fas.fa-tv
+                        .body_info
+                            .title Minimal Duplex Room
+                            p
+                                | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                | Quis inventore voluptatem nesciunt accusamus provident
+                                | aspernatur velit assumenda porro iure unde.
+                    .extra_info
+                        .price
+                            | $345
+                            span /Night
+                        .hl
+                        .booking Booking Now
+                // ROOM
+                .room
+                    .room_img
+                    .room_body
+                        .icon_list
+                            ul
+                                li
+                                    i.fas.fa-bed
+                                li
+                                    i.fas.fa-wifi
+                                li
+                                    i.fas.fa-car-side
+                                li
+                                    i.fas.fa-coffee
+                                li
+                                    i.fas.fa-utensils
+                                li
+                                    i.fas.fa-shower
+                                li
+                                    i.fas.fa-tv
+                        .body_info
+                            .title Minimal Duplex Room
+                            p
+                                | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                | Quis inventore voluptatem nesciunt accusamus provident
+                                | aspernatur velit assumenda porro iure unde.
+                    .extra_info
+                        .price
+                            | $345
+                            span /Night
+                        .hl
+                        .booking Booking Now
+                // ROOM
+                .room
+                    .room_img
+                    .room_body
+                        .icon_list
+                            ul
+                                li
+                                    i.fas.fa-bed
+                                li
+                                    i.fas.fa-wifi
+                                li
+                                    i.fas.fa-car-side
+                                li
+                                    i.fas.fa-coffee
+                                li
+                                    i.fas.fa-utensils
+                                li
+                                    i.fas.fa-shower
+                                li
+                                    i.fas.fa-tv
+                        .body_info
+                            .title Minimal Duplex Room
+                            p
+                                | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                | Quis inventore voluptatem nesciunt accusamus provident
+                                | aspernatur velit assumenda porro iure unde.
+                    .extra_info
+                        .price
+                            | $345
+                            span /Night
+                        .hl
+                        .booking Booking Now
+                // ROOM
+                .room
+                    .room_img
+                    .room_body
+                        .icon_list
+                            ul
+                                li
+                                    i.fas.fa-bed
+                                li
+                                    i.fas.fa-wifi
+                                li
+                                    i.fas.fa-car-side
+                                li
+                                    i.fas.fa-coffee
+                                li
+                                    i.fas.fa-utensils
+                                li
+                                    i.fas.fa-shower
+                                li
+                                    i.fas.fa-tv
+                        .body_info
+                            .title Minimal Duplex Room
+                            p
+                                | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                | Quis inventore voluptatem nesciunt accusamus provident
+                                | aspernatur velit assumenda porro iure unde.
+                    .extra_info
+                        .price
+                            | $345
+                            span /Night
+                        .hl
+                        .booking Booking Now
+                // ROOM
+                .room
+                    .room_img
+                    .room_body
+                        .icon_list
+                            ul
+                                li
+                                    i.fas.fa-bed
+                                li
+                                    i.fas.fa-wifi
+                                li
+                                    i.fas.fa-car-side
+                                li
+                                    i.fas.fa-coffee
+                                li
+                                    i.fas.fa-utensils
+                                li
+                                    i.fas.fa-shower
+                                li
+                                    i.fas.fa-tv
+                        .body_info
+                            .title Minimal Duplex Room
+                            p
+                                | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                | Quis inventore voluptatem nesciunt accusamus provident
+                                | aspernatur velit assumenda porro iure unde.
+                    .extra_info
+                        .price
+                            | $345
+                            span /Night
+                        .hl
+                        .booking Booking Now
+                // ROOM
+                .room
+                    .room_img
+                    .room_body
+                        .icon_list
+                            ul
+                                li
+                                    i.fas.fa-bed
+                                li
+                                    i.fas.fa-wifi
+                                li
+                                    i.fas.fa-car-side
+                                li
+                                    i.fas.fa-coffee
+                                li
+                                    i.fas.fa-utensils
+                                li
+                                    i.fas.fa-shower
+                                li
+                                    i.fas.fa-tv
+                        .body_info
+                            .title Minimal Duplex Room
+                            p
+                                | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                | Quis inventore voluptatem nesciunt accusamus provident
+                                | aspernatur velit assumenda porro iure unde.
+                    .extra_info
+                        .price
+                            | $345
+                            span /Night
+                        .hl
+                        .booking Booking Now
+                // ROOM
+                .room
+                    .room_img
+                    .room_body
+                        .icon_list
+                            ul
+                                li
+                                    i.fas.fa-bed
+                                li
+                                    i.fas.fa-wifi
+                                li
+                                    i.fas.fa-car-side
+                                li
+                                    i.fas.fa-coffee
+                                li
+                                    i.fas.fa-utensils
+                                li
+                                    i.fas.fa-shower
+                                li
+                                    i.fas.fa-tv
+                        .body_info
+                            .title Minimal Duplex Room
+                            p
+                                | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                | Quis inventore voluptatem nesciunt accusamus provident
+                                | aspernatur velit assumenda porro iure unde.
+                    .extra_info
+                        .price
+                            | $345
+                            span /Night
+                        .hl
+                        .booking Booking Now
+                // ROOM
+                .room
+                    .room_img
+                    .room_body
+                        .icon_list
+                            ul
+                                li
+                                    i.fas.fa-bed
+                                li
+                                    i.fas.fa-wifi
+                                li
+                                    i.fas.fa-car-side
+                                li
+                                    i.fas.fa-coffee
+                                li
+                                    i.fas.fa-utensils
+                                li
+                                    i.fas.fa-shower
+                                li
+                                    i.fas.fa-tv
+                        .body_info
+                            .title Minimal Duplex Room
+                            p
+                                | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                | Quis inventore voluptatem nesciunt accusamus provident
+                                | aspernatur velit assumenda porro iure unde.
+                    .extra_info
+                        .price
+                            | $345
+                            span /Night
+                        .hl
+                        .booking Booking Now
