@@ -1,27 +1,62 @@
-const bookings_data = require('../data/bookings_data.tsx');
+let Booking = require("../models/bookingModel");
 
 const bookingsController = {
-   readBooking: (req, res, next) => {
-      // res.send("" + ("1" === req.params.id));
-      // res.send("" + bookings_data[1].id);
-      // res.json(bookings_data);
-      res.json(bookings_data.find( (b) => (""+b.id) === req.params.id ));
+   // GET ONLY ONE BOOKING IN THE DB (id as ref)
+   readBooking: async (req, res, next) => {
+
+      try {
+         const booking = await Booking.findById(req.params.id);
+         res.json(booking);
+      } catch (error) {
+         res.send(error);
+      }
    },
-   readAll: (req, res, next) => {
-      console.log("readAll");
-      // if (req.user){
-         console.log(req.OPTIONS);
-      // }
-      res.json(bookings_data);
+   // GET ALL BOOKINGS IN THE DB WITH OPTINAL FILTERS
+   readAll: async (req, res, next) => {
+
+      try {
+         const bookings = await Booking.find();
+         res.json(bookings);
+      } catch (error) {
+         res.send(error);
+      }
+      
    },
-   insert: (req, res, next) => {
-      res.send('Insert data');
+   // INSERT ONE BOOKING IN THE DB
+   insert: async (req, res, next) => {
+      
+      try {
+         let booking = new Booking(req.body);
+         await booking.save()
+            .then(response => res.send(booking)) // return the inserted booking
+            .catch(error => res.send(""+error));
+      } catch (error) {
+         res.json({error: error});
+      }      
    },
-   update: (req, res, next) => {
-      res.send('Update data');
+   // UPDATE ONE BOOKING IN THE DB (id as ref)
+   update: async (req, res, next) => {
+
+      try {
+         const booking = await Booking.findByIdAndUpdate(req.params.id, req.body);
+         res.json(booking); // return the updated booking
+         
+      } catch (error) {
+         res.send(error);
+      }
+
    },
-   delete: (req, res, next) => {
-      res.send('Delete data');
+   // DELETE ONE BOOKING IN THE DB (id as ref)
+   delete: async(req, res, next) => {
+
+      try {         
+         const booking = await Booking.findByIdAndDelete(req.params.id);
+         res.json(booking); // return the deleted booking
+         
+      } catch (error) {
+         res.send(error);
+      }
+
    }
 };
 

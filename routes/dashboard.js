@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const passport = require("passport");
+const app = require("../app");
 
 const bookingsController = require("../controllers/bookingsController");
 const dashboardController = require("../controllers/dashboardController");
@@ -20,15 +21,16 @@ router.get('/test',
 // ---------------- DASHBOARD --------------
 router.route("/")
    .get(dashboardController.read)
-   .post(dashboardController.update)
+   .put(dashboardController.update)
 
 // ---------------- BOOKINGS --------------
+
 router.route("/bookings")
    .get(bookingsController.readAll)
    .post(bookingsController.insert)
 router.route("/bookings/:id")
    .get(bookingsController.readBooking)
-   .post(bookingsController.update)
+   .put(bookingsController.update)
    .delete(bookingsController.delete)
 
 
@@ -38,7 +40,7 @@ router.route("/rooms")
    .post(roomsController.insert)
 router.route("/rooms/:id")
    .get(roomsController.readRoom)
-   .post(roomsController.update)
+   .put(roomsController.update)
    .delete(roomsController.delete)
 
 // ---------------- USERS --------------
@@ -47,13 +49,24 @@ router.route("/users")
    .post(usersController.insert)
 router.route("/users/:id")
    .get(usersController.readUser)
-   .post(usersController.update)
+   .put(usersController.update)
    .delete(usersController.delete)
 
 // ---------------- CONTACTS --------------
 // router.route("/contacts")
 //    .get()
 //    .post()
+
+router.get(
+   "/profile",
+   (req, res, next) => {
+      res.json({
+         message: "You made it to the secure route",
+         user: req.user,
+         token: req.query.secret_token
+      })
+   }
+);
 
 
 module.exports = router;
