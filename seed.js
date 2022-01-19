@@ -97,7 +97,6 @@ const users_seed = async () => {
 }
 
 
-
 bookings_seed();
 rooms_seed();
 contacts_seed();
