@@ -17,6 +17,7 @@ const authRouter = require('./routes/auth');
 const dashboardRoute = require("./routes/dashboard.js");
 const secureRoute = require('./routes/secure-routes');
 const UserModel = require("./models/user");
+const { get } = require('http');
 
 const app = express();
 
@@ -65,6 +66,12 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(function (req, res, next) {
+	res.header("Access-Control-Allow-Origin", "*");
+	res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Authorization, Content-Type, Accept");
+	res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,PATCH,OPTIONS');
+	next();
+});
 // app.use(cors({
 // 	origin: "http://localhost:3000", // location of the app where connecting to
 // 	credentials: true
