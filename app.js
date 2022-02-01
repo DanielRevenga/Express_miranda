@@ -9,11 +9,12 @@ const bcrypt = require("bcryptjs");
 const expressSession = require("express-session");
 const cors = require("cors");
 const passport = require("passport");
+require('dotenv').config();
 
 const indexRouter = require('./routes/home');
 const usersRouter = require('./routes/users');
 const authRouter = require('./routes/auth');
-const dashboardRoute = require("./routes/dashboard.js")
+const dashboardRoute = require("./routes/dashboard.js");
 const secureRoute = require('./routes/secure-routes');
 const UserModel = require("./models/user");
 
@@ -33,7 +34,7 @@ const app = express();
 // 	console.log("Mongoose Is Connected");
 // };
 // ======================================= MIRANDA DB =======================================
-mongoose.connect(`mongodb+srv://snake:1234@cluster0.cfo5h.mongodb.net/Miranda?retryWrites=true&w=majority`,
+mongoose.connect(`mongodb+srv://${ process.env.DB_USER }:${ process.env.DB_PASS }@cluster0.cfo5h.mongodb.net/${ process.env.DB_MAIN_COLLECTION }?retryWrites=true&w=majority`,
 {
 	useNewUrlParser: true,
 	useUnifiedTopology: true

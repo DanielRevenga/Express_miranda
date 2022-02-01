@@ -39,11 +39,7 @@ const userSchema = new Schema({
     end_date:{
        type: Date,
        default: null
-    },
-    phone: {
-        type: String,
-        deafult: null
-    } 
+    }
 });
 
 const User = mongoose.model("User2", userSchema);

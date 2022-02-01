@@ -1,9 +1,10 @@
 let mongoose = require("mongoose");
 
-dbConnection = async () => {
+const dbConnection = async () => {
 
     try {
-        await mongoose.connect("mongodb+srv://snake:1234@cluster0.cfo5h.mongodb.net/test", {
+        // await mongoose.connect("mongodb+srv://snake:1234@cluster0.cfo5h.mongodb.net/test", {
+        await mongoose.connect(process.env.DB_CN, {
             useNewUrlParser: true,
             useUnifiedTopology: true
         });

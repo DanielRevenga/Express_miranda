@@ -5,9 +5,13 @@ const Booking = require("./models/bookingModel");
 const Room = require("./models/roomModel");
 const Contact = require("./models/contactModel");
 const User = require("./models/userModel");
+// @ts-ignore
 const bookings_data = require("./data/bookings_data.tsx");
+// @ts-ignore
 const rooms_data = require("./data/rooms_data.tsx");
+// @ts-ignore
 const contacts_data = require("./data/contacts_data.tsx");
+// @ts-ignore
 const users_data = require("./data/users_data.tsx");
 
 mongoose.connect(`mongodb+srv://snake:1234@cluster0.cfo5h.mongodb.net/Miranda?retryWrites=true&w=majority`,
@@ -32,7 +36,7 @@ const bookings_seed = async () => {
                 .catch(error => console.log("BOOKING"+error));
         }
     } catch (error) {
-        console.log({error: "BOOKING"+error});s
+        console.log({error: "BOOKING"+error});
     }
     console.log("BOOKINGSs SEED START");
 }
@@ -51,7 +55,7 @@ const rooms_seed = async () => {
                 .catch(error => console.log("ROOM"+error));
         }
     } catch (error) {
-        console.log({error: "ROOM"+error});s
+        console.log({error: "ROOM"+error});
     }
     console.log("ROOMS SEED START");
 }
@@ -71,7 +75,7 @@ const contacts_seed = async () => {
                 .catch(error => console.log("CONCTACT"+error));
         }
     } catch (error) {
-        console.log({error: "CONCTACT"+error});s
+        console.log({error: "CONCTACT"+error});
     }
     console.log("CONTACTS SEED END");
 }
@@ -91,7 +95,7 @@ const users_seed = async () => {
                 .catch(error => console.log("USER"+error));
         }
     } catch (error) {
-        console.log({error: "USER"+error});s
+        console.log({error: "USER"+error});
     }
     console.log("USERS SEED END");
 }
