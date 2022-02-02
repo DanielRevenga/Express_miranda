@@ -1,20 +1,62 @@
-const rooms_data = require('../data/rooms_data.tsx');
+let Room = require("../models/roomModel");
 
 const roomsController = {
-   readRoom: (req, res, next) => {
-      res.json(rooms_data.find( (b) => (""+b.id) === req.params.id ));
+   // GET ONLY ONE ROOM IN THE DB (id as ref)
+   readRoom: async (req, res, next) => {
+
+      try {
+         const room = await Room.findById(req.params.id);
+         res.json(room);
+      } catch (error) {
+         res.send(error);
+      }
    },
-   readAll: (req, res, next) => {
-      res.json(rooms_data);
+   // GET ALL ROOMS IN THE DB WITH OPTINAL FILTERS
+   readAll: async (req, res, next) => {
+
+      try {
+         const room = await Room.find();
+         res.json(room);
+      } catch (error) {
+         res.send(error);
+      }
+      
    },
-   insert: (req, res, next) => {
-      res.send('Insert data');
+   // INSERT ONE ROOM IN THE DB
+   insert: async (req, res, next) => {
+      
+      try {
+         let room = new Room(req.body);
+         await room.save()
+            .then(response => res.send(room)) // return the inserted room
+            .catch(error => res.send(""+error));
+      } catch (error) {
+         res.json({error: error});
+      }      
    },
-   update: (req, res, next) => {
-      res.send('Update data');
+   // UPDATE ONE ROOM IN THE DB (id as ref)
+   update: async (req, res, next) => {
+
+      try {
+         const room = await Room.findByIdAndUpdate(req.params.id, req.body);
+         res.json(room); // return the updated room
+         
+      } catch (error) {
+         res.send(error);
+      }
+
    },
-   delete: (req, res, next) => {
-      res.send('Delete data');
+   // DELETE ONE ROOM IN THE DB (id as ref)
+   delete: async(req, res, next) => {
+
+      try {         
+         const room = await Room.findByIdAndDelete(req.params.id);
+         res.json(room); // return the deleted room
+         
+      } catch (error) {
+         res.send(error);
+      }
+
    }
 };
 

@@ -15,8 +15,8 @@ const bookingsController = {
    readAll: async (req, res, next) => {
 
       try {
-         const bookings = await Booking.find();
-         res.json(bookings);
+         const booking = await Booking.find();
+         res.json(booking);
       } catch (error) {
          res.send(error);
       }

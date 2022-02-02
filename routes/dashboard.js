@@ -3,10 +3,11 @@ const router = express.Router();
 const passport = require("passport");
 const app = require("../app");
 
-const bookingsController = require("../controllers/bookingsController");
 const dashboardController = require("../controllers/dashboardController");
+const bookingsController = require("../controllers/bookingsController");
 const roomsController = require("../controllers/roomsController");
 const usersController = require("../controllers/usersController");
+const contactsController = require("../controllers/contactsController");
 
 router.get('/test',
   passport.authenticate('local', { successRedirect: '/about_us',
@@ -53,9 +54,15 @@ router.route("/users/:id")
    .delete(usersController.delete)
 
 // ---------------- CONTACTS --------------
-// router.route("/contacts")
-//    .get()
-//    .post()
+router.route("/contacts")
+   .get(contactsController.readAll)
+   .post(contactsController.insert)
+router.route("/contacts/:id")
+   .get(contactsController.readContact)
+   .put(contactsController.update)
+   .delete(contactsController.delete)
+
+
 
 router.get(
    "/profile",

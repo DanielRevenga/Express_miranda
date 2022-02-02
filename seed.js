@@ -23,7 +23,7 @@ mongoose.connect(`mongodb+srv://snake:1234@cluster0.cfo5h.mongodb.net/Miranda?re
 };
 
 const bookings_seed = async () => {
-    console.log("BOOKINGSs SEED START");
+    console.log("BOOKINGS SEED START");
     try {
         // DELETE BOOKINGS
         await Booking.deleteMany({});
@@ -38,7 +38,7 @@ const bookings_seed = async () => {
     } catch (error) {
         console.log({error: "BOOKING"+error});
     }
-    console.log("BOOKINGSs SEED START");
+    console.log("BOOKINGS SEED START");
 }
 
 const rooms_seed = async () => {
@@ -100,10 +100,17 @@ const users_seed = async () => {
     console.log("USERS SEED END");
 }
 
+const execute_seeds = async () => {
+    await bookings_seed();
+    await rooms_seed();
+    await contacts_seed();
+    await users_seed();
+    
+    mongoose.connection.close();
+}
 
-bookings_seed();
-rooms_seed();
-contacts_seed();
-users_seed();
+execute_seeds();
+
+
 
 

@@ -12,11 +12,12 @@ const UserSchema = new mongoose.Schema({
       required: true
    }
 });
-
+// @ts-ignore
 UserSchema.pre("save", async function (next) {
       const user = this;
+      // @ts-ignore
       const hash = await bcrypt.hash(this.password, 10);
-
+      // @ts-ignore
       this.password = hash;
       next();
    }
@@ -24,6 +25,7 @@ UserSchema.pre("save", async function (next) {
 
 UserSchema.methods.isValidPassword = async function (password) {
    const user = this;
+   // @ts-ignore
    const compare = await bcrypt.compare(password, user.password);
 
    return compare;
