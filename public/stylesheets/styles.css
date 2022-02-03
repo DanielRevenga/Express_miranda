@@ -1489,15 +1489,15 @@ footer .rrss div:hover {
   }
 }
 #about_us .mainContent_body .services .container_offers .item.img.img1 {
-  background-image: url("../img/stairs.jpg");
+  background-image: url("../images/stairs.jpg");
   background-size: cover;
 }
 #about_us .mainContent_body .services .container_offers .item.img.img2 {
-  background-image: url("../img/pool.jpg");
+  background-image: url("../images/pool.jpg");
   background-size: cover;
 }
 #about_us .mainContent_body .services .container_offers .item.img.img3 {
-  background-image: url("../img/yard.jpg");
+  background-image: url("../images/yard.jpg");
   background-size: cover;
 }
 #about_us .mainContent_body .counter {
@@ -1677,7 +1677,7 @@ footer .rrss div:hover {
   margin-right: 1.5%;
 }
 #about_us .mainContent_body .new_feeds .body .body_item.item1 .feed_img {
-  background-image: url("../img/not_disturb.jpg");
+  background-image: url("../images/not_disturb.jpg");
   background-size: cover;
   height: 150px;
 }
@@ -1687,7 +1687,7 @@ footer .rrss div:hover {
   }
 }
 #about_us .mainContent_body .new_feeds .body .body_item.item2 .feed_img {
-  background-image: url("../img/random_room1.jpg");
+  background-image: url("../images/random_room1.jpg");
   background-size: cover;
   height: 150px;
 }
@@ -1697,7 +1697,7 @@ footer .rrss div:hover {
   }
 }
 #about_us .mainContent_body .new_feeds .body .body_item.item3 .feed_img {
-  background-image: url("../img/random_room3.jpg");
+  background-image: url("../images/random_room3.jpg");
   background-size: cover;
   height: 150px;
 }
@@ -2354,7 +2354,7 @@ footer .rrss div:hover {
 }
 #home .mainContent_header {
   display: flex;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.2)), url("../img/home2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.2)), url("../images/home2.jpg");
   background-size: cover;
   flex-flow: column;
   height: 400px;
@@ -2513,7 +2513,7 @@ footer .rrss div:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url("../img/random_room3.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url("../images/random_room3.jpg");
   background-size: contain;
 }
 @media only screen and (min-width: 1024px) {
@@ -2793,15 +2793,15 @@ footer .rrss div:hover {
   }
 }
 #home .mainContent_body .services .container_offers .item.img.img1 {
-  background-image: url("../img/stairs.jpg");
+  background-image: url("../images/stairs.jpg");
   background-size: cover;
 }
 #home .mainContent_body .services .container_offers .item.img.img2 {
-  background-image: url("../img/pool.jpg");
+  background-image: url("../images/pool.jpg");
   background-size: cover;
 }
 #home .mainContent_body .services .container_offers .item.img.img3 {
-  background-image: url("../img/yard.jpg");
+  background-image: url("../images/yard.jpg");
   background-size: cover;
 }
 @media only screen and (min-width: 1024px) {
@@ -2948,11 +2948,11 @@ footer .rrss div:hover {
   border: 1px solid #fff;
 }
 #home .mainContent_body .room_type .room_grid .room.junior {
-  background-image: url("../img/hotel_chair.jpg");
+  background-image: url("../images/hotel_chair.jpg");
   background-size: cover;
 }
 #home .mainContent_body .room_type .room_grid .room.hallFame {
-  background-image: url("../img/hall_of_fame.jpg");
+  background-image: url("../images/hall_of_fame.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -3220,7 +3220,7 @@ footer .rrss div:hover {
   }
 }
 #home .mainContent_body .testimonials .info {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.2)), url("../img/hotel_view.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.2)), url("../images/hotel_view.jpg");
   background-size: cover;
   color: #fff;
   padding: 5px 15px;
@@ -3324,7 +3324,7 @@ footer .rrss div:hover {
   margin-right: 1.5%;
 }
 #home .mainContent_body .new_feeds .body .body_item.item1 .feed_img {
-  background-image: url("../img/not_disturb.jpg");
+  background-image: url("../images/not_disturb.jpg");
   background-size: cover;
   height: 150px;
 }
@@ -3334,7 +3334,7 @@ footer .rrss div:hover {
   }
 }
 #home .mainContent_body .new_feeds .body .body_item.item2 .feed_img {
-  background-image: url("../img/random_room1.jpg");
+  background-image: url("../images/random_room1.jpg");
   background-size: cover;
   height: 150px;
 }
@@ -3344,7 +3344,7 @@ footer .rrss div:hover {
   }
 }
 #home .mainContent_body .new_feeds .body .body_item.item3 .feed_img {
-  background-image: url("../img/random_room3.jpg");
+  background-image: url("../images/random_room3.jpg");
   background-size: cover;
   height: 150px;
 }
@@ -3998,8 +3998,8 @@ footer .rrss div:hover {
 
 #room_grid .mainContent_header {
   display: flex;
-  background-image: url("../img/home2.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("../img/home2.jpg");
+  background-image: url("../images/home2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("../images/home2.jpg");
   background-size: cover;
   position: relative;
   flex-flow: column;
@@ -4109,10 +4109,10 @@ footer .rrss div:hover {
   background-size: cover;
 }
 #room_grid .mainContent_body .rooms .room:nth-of-type(2n) .room_img {
-  background-image: url("../img/random_room1.jpg");
+  background-image: url("../images/random_room1.jpg");
 }
 #room_grid .mainContent_body .rooms .room:nth-child(2n-1) .room_img {
-  background-image: url("../img/random_room2.jpg");
+  background-image: url("../images/random_room2.jpg");
 }
 #room_grid .mainContent_body .rooms .room .room_body {
   width: 70%;
@@ -4813,8 +4813,8 @@ footer .rrss div:hover {
   margin-bottom: 30px;
   position: relative;
   display: flex;
-  background-image: url("../img/champaigne.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("../img/champaigne.jpg");
+  background-image: url("../images/champaigne.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("../images/champaigne.jpg");
   background-size: cover;
   flex-flow: column;
   height: 175px;
@@ -5701,8 +5701,8 @@ footer .rrss div:hover {
 }
 #reservation .mainContent .mainContent_header {
   display: flex;
-  background-image: url("../img/home2.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.3)), url("../img/home2.jpg");
+  background-image: url("../images/home2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.3)), url("../images/home2.jpg");
   background-size: cover;
   position: relative;
   flex-flow: column;
@@ -5779,7 +5779,7 @@ footer .rrss div:hover {
   }
 }
 #reservation .mainContent .header2_availability .mainContent_header2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.1)), url("../img/random_room2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.1)), url("../images/random_room2.jpg");
   background-size: cover;
   background-position: center;
   height: 38vh;
@@ -6155,7 +6155,7 @@ footer .rrss div:hover {
   }
 }
 #reservation .mainContent .testimonials .info {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.2)), url("../img/hotel_view.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.2)), url("../images/hotel_view.jpg");
   background-size: cover;
   color: #fff;
   padding: 5px 15px;
@@ -6285,11 +6285,11 @@ footer .rrss div:hover {
   }
 }
 #reservation .mainContent .related_rooms .related_room:nth-of-type(1) .room-image {
-  background-image: url("../img/hotel_pool.jpg");
+  background-image: url("../images/hotel_pool.jpg");
   background-size: cover;
 }
 #reservation .mainContent .related_rooms .related_room:nth-of-type(2) .room-image {
-  background-image: url("../img/hotel_pool2.jpg");
+  background-image: url("../images/hotel_pool2.jpg");
   background-size: cover;
 }
 #reservation .mainContent .related_rooms .related_room .room_footer {
@@ -6969,8 +6969,8 @@ footer .rrss div:hover {
 
 #offers .mainContent_header {
   display: flex;
-  background-image: url("../img/home2.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("../img/home2.jpg");
+  background-image: url("../images/home2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("../images/home2.jpg");
   background-size: cover;
   position: relative;
   flex-flow: column;
@@ -7085,10 +7085,10 @@ footer .rrss div:hover {
   background-size: cover;
 }
 #offers .mainContent_body .rooms .room:nth-of-type(2n) .room_img {
-  background-image: url("../img/random_room1.jpg");
+  background-image: url("../images/random_room1.jpg");
 }
 #offers .mainContent_body .rooms .room:nth-child(2n-1) .room_img {
-  background-image: url("../img/random_room2.jpg");
+  background-image: url("../images/random_room2.jpg");
 }
 #offers .mainContent_body .rooms .room .room_body {
   width: 36%;
