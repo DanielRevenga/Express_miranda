@@ -1204,7 +1204,7 @@ footer .rrss div:hover {
 
 #about_us .mainContent_header {
   display: flex;
-  background-image: url("../img/home2.jpg");
+  background-image: url("../images/home2.jpg");
   background-size: cover;
   flex-flow: column;
   height: 400px;
