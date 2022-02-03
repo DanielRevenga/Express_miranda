@@ -94,45 +94,6 @@ app.use('/user', passport.authenticate('jwt', { session: false }), secureRoute);
 // require("./passportConfig")(passport);
 // ------------------------- Middlewares END -------------------------
 
-// ------------------------- Routes -------------------------
-// app.post("/login", (req, res, next) => {
-// 	passport.authenticate("local", (err, user, info) => {
-//         if (err) throw err;
-//         if (!user) res.send("User or Password are wrong");
-//         else {
-//             req.logIn(user, err => {
-//                 if (err) throw err;
-//                 res.send("Successfully Authenticated");
-//                 console.log(req.user);
-//             });
-//         } 
-//     })(req, res, next);
-// });
-// app.post("/register", (req, res) => {
-// 	User.findOne({username: req.body.username}, async(err, doc) => {
-// 		if (err) throw err;
-// 		if (doc) res.send("User Already Exists");
-// 		if (!doc) {
-//             const hashedPassword = await bcrypt.hash(req.body.password, 10);
-// 			const newUser = new User({
-// 				username: req.body.username,
-//                 password: hashedPassword
-// 			});
-//             await newUser.save();
-//             res.send("User Created");
-// 		}
-// 	});
-// });
-// app.get("/user", (req, res) => {
-// 	console.log("ererererere",req.user);
-	
-//     res.send(req.user); // The req.user stores the entire user, we can use in all our app
-// });
-
-// app.get("/testAuth", passport.authenticate("local", {
-// 	successRedirect: "/dashboard/bookings",
-// 	failureRedirect: "/dashboard",
-// }));
 // ------------------------- Routes END -------------------------
 
 // catch 404 and forward to error handler
