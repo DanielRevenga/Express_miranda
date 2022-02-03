@@ -9,54 +9,56 @@ head
     // FONT AWESOME
     link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.15.4/css/all.css' integrity='sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm' crossorigin='anonymous')
 
+
 // HEADER
-header
+header#top
     nav
         .bars(onclick="document.querySelectorAll('.animation').forEach((el) => el.classList.toggle('active'));")
             i.fas.fa-bars
         .drop_down.animation
             ul.animation
                 li
-                    a.button.button_brown(href='./about_us') About&nbsp;Us
+                    a.button(href='./about_us.html') About Us
                 li
-                    a.button.button_brown(href='./room_grid') Rooms
+                    a.button(href='./room_grid.html') Rooms
                 li
-                    a.button.button_brown(href='./reservation') Offers
+                    a.button(href='./offers.html') Offers
                 li
-                    a.button.button_brown(href='') News
+                    a.button(href='') Room Details
                 li
-                    a.button.button_brown(href='./contact_us') Contact
-            .container_logoH_nav             
-                .logoH H
-                div
-                    span.bold HOTEL
-                    br
-                    |                   MIRANDA
+                    a.button(href='./contact_us.html') Contact
+            .container_logoH_nav
+                a(href='./home.html')
+                    .logoH H
+                    div
+                        span.bold HOTEL
+                        br
+                        |                      MIRANDA
             .container_headerInfo
                 .info_container.container_headerInfo_phone
                     .info
                         .title Phone Number
-                        .data +908 987 877 09
+                        .data 648714734
                     .fakeIcon
                         .fakeIcon_top
-                        i.fas.fa-phone
+                            i.fas.fa-phone
                 .info_container.container_headerInfo_email
                     .info
                         .title Email Address
-                        .data info@webmail.com
+                        .data daniel.revenga.garcia@gmail.com
                     .fakeIcon
                         .fakeIcon_top
-                        i.fas.fa-envelope
-            .container_logoH
-                // <div class="logoH">H</div>
-                div
-                    span.bold HOTEL
-                    br
-    
+                            i.fas.fa-envelope
+    .container_logoH
+        div
+            span.bold HOTEL
+            br
+            |             MIRANDA
+
+
 block content
 
-// FOOTER
-footer
+
     // BODY
     .body
         .logo_section
@@ -139,3 +141,78 @@ footer
             i.fab.fa-linkedin
         div
             i.fab.fa-youtube
+
+
+// FOOTER
+footer
+    // BODY
+    .body
+        .logo_section
+            .logo_title
+                .logo H
+                .title
+                    span Hotel
+                    |  Miranda
+            div
+                p
+                    | Lorem ipsum dolor sit amet consectetur,
+                    | adipisicing elit. Ducimus vel fuga perspiciatis
+                    | excepturi nulla odio illo labore tenetur voluptates temporibus!
+        // RRSS
+        .rrss
+            div
+                a(href='https://github.com/DanielRevenga')
+                    i.fab.fa-github
+            div
+                a(href='https://www.linkedin.com/in/daniel-revenga-mern-stack/')
+                    i.fab.fa-linkedin
+            //
+                <div>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                </div>
+                <div>
+                <a href=""><i class="fab fa-instagram-square"></i></a>
+                </div>
+                <div>
+                <a href=""><i class="fab fa-youtube"></i></a>
+                </div>
+        //
+            <div class="services_section">
+            <div class="title">Services.</div>
+            <ul>
+            <li><span>+</span> Restaurant & Bar</li>
+            <li><span>+</span> Swimming Pool</li>
+            <li><span>+</span> Wellness & Spa</li>
+            <li><span>+</span> Restaurant</li>
+            <li><span>+</span> Conference Room</li>
+            <li><span>+</span> Coctail Party House</li>
+            <li><span>+</span> Gaming Zone</li>
+            <li><span>+</span> Marrige Party</li>
+            <li><span>+</span> Party Planning</li>
+            <li><span>+</span> Tour Consultancy</li>
+            </ul>
+            </div>
+        .contactUs_section
+            .title Contact Us.
+            .contacts
+                .contact
+                    .icon
+                        i.fas.fa-phone-alt
+                    .info_container
+                        .title Phone Number
+                        .info 648714734
+                .contact
+                    .icon
+                        i.fas.fa-envelope-open-text
+                    .info_container
+                        .title Email Address
+                        .info daniel.revenga.garcia@gmail.com
+                .contact
+                    .icon
+                        i.fas.fa-map-marker-alt
+                    .info_container
+                        .title Office Address
+                        .info OXYGEN, Princesa 31, Madrid
+    // COPYRIGHT
+    .copy
+        | copyright by@DanielRevenga

@@ -39,53 +39,12 @@ block content
                             p info@webmail.com
                             p jobs.info@webmail.com
             // MAIN CONTENT - MAP
-            //
-                <div class="map desktop">
-                <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830929283!2d-74.11976365596463!3d40.697663748538346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva%20York%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1637499943335!5m2!1ses!2ses"
-                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            .testing_map
-                .map_form
-                    label(for='inputDirection') Origin Direction:
-                    input#inputDirection(type='text' name='direction')
-                    button#submit(type='submit') Search
-                .map_info
-                    div
-                        | Origin: 
-                        span#origin
-                    div
-                        | Destination: 
-                        span#destination
-                    div
-                        | Distance: 
-                        span#distance
-                    div
-                        | Duration: 
-                        span#duration
-                .map_form2
-                    label(for='a') Select Area: 
-                    select#ac_select(name='ac')
-                        option(value='')
-                        option(value='andalucia') Andalucía
-                        option(value='aragon') Aragon
-                        option(value='asturias') Asturias
-                        option(value='islas_baleares') Islas baleares
-                        option(value='canarias') Canarias
-                        option(value='cantabria') Cantabria
-                        option(value='castilla_la_mancha') Castilla la mancha
-                        option(value='castilla_y_leon') Castilla y leon
-                        option(value='cataluna') Cataluña
-                        option(value='valencia') Valencia
-                        option(value='extremadura') Extremadura
-                        option(value='galicia') Galicia
-                        option(value='la_rioja') La_rioja
-                        option(value='madrid') Madrid
-                        option(value='murcia') Murcia
-                        option(value='navarra') Navarra
-                        option(value='pais_vasco') Pais vasco
-                    // <button type="submit" id="submit_form2">Select AC</button>
-            #google_map.map.desktop
+            .map.desktop
+                #map
+                //
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830929283!2d-74.11976365596463!3d40.697663748538346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva%20York%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1637499943335!5m2!1ses!2ses"
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             // MAIN CONTENT - CONTACT FORM
             section#contactForm
                 form#userContactForm(action='')
@@ -140,12 +99,8 @@ block content
                             p info@webmail.com
                             p jobs.info@webmail.com
             // MAIN CONTENT - MAP
-            //
-                <div class="map">
-                <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830929283!2d-74.11976365596463!3d40.697663748538346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva%20York%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1637499943335!5m2!1ses!2ses"
-                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            //
-                <div class="map">
-                </div>
+            .map
+                iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830929283!2d-74.11976365596463!3d40.697663748538346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva%20York%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1637499943335!5m2!1ses!2ses' style='border:0;' allowfullscreen='' loading='lazy')
+        // ANCHOR TOP
+        a.anchorTop(href='#top')
+            i.fas.fa-arrow-up

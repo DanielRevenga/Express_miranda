@@ -2,99 +2,118 @@ extends layout
 
 block content
   
-    //  MAIN CONTENT 
+    // MAIN CONTENT
     main#home
-        //  MAIN CONTENT - HEADER 
+        // MAIN CONTENT - HEADER
         section.mainContent_header
             .subtitle The ultimate luxury experience
             .title
-                | The perfect
-                br
-                | Base for you
-
+                div The perfect
+                div Base for you
             .buttons
-                button.button.button_brown Take a tour
-                button.button.button_grey Learn more
-        //  MAIN CONTENT - BODY 
+                // <button class="button button_brown">Take a tour</button>
+                button.button.button_grey
+                    a(href='./about_us.html') About Us
+        // MAIN CONTENT - BODY
         .mainContent_body
-            //  FORM AVAILABILITY 
+            // FORM AVAILABILITY
             form.form_availability
                 .form_control
                     .label
                         label(for='arrival_date') Check in
                     .date.hide_mobile_off 24
-                    input.hide_mobile_on#arrival_date(type='date', name='arrival_date', placeholder='Set Arrival Date')
+                    input#arrival_date.hide_mobile_on.flatpickr.arrival(type='date' name='arrival_date' placeholder='Set Arrival Date')
                 .form_control
                     .label
                         label(for='departure_date') Check out
                     .date.hide_mobile_off 29
-                    input.hide_mobile_on#departure_date(type='date', name='departure_date', placeholder='Set Departure Date')
+                    input#departure_date.hide_mobile_on.flatpickr.departure(type='date' name='departure_date' placeholder='Set Departure Date')
                 button.button.button_brown Book now
-            //  TOUR 
+            // TOUR
             section.tour
                 .info
                     .subtitle.colorGreyDark Take a tour
                     .title Discover our underground.
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quidem in quasi, obcaecati, illum soluta modi veniam asperiores alias quos voluptas id fugit vitae quisquam recusandae minima repudiandae unde error.
+                    p
+                        | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        | Inventore quidem in quasi, obcaecati, illum soluta modi
+                        | veniam asperiores alias quos voluptas id fugit vitae
+                        | quisquam recusandae minima repudiandae unde error.
                     button.button.button_brown Book now
                 .video
-                    iframe(src='https://www.youtube.com/embed/Bu3Doe45lcU?start=25', title='YouTube video player', frameborder='0', allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture', allowfullscreen)
-            //  SERVICES 
+                    iframe(src='https://www.youtube.com/embed/Bu3Doe45lcU?start=25&end=75 ' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+            // SERVICES
             section.services
                 .subtitle
-                    span.colorGreyDark Since
-                    |  
+                    span Since
                     span.colorBrown 1994
                 .title Situated in prime position at the foot of the slopes of couchevel moriond.
+                // ICONS
                 .container_icons
                     .container_icon.top
                         .icon
-                            img(src='images/icons/coffee-cup.png', alt)
+                            img(src='../img/icons/coffee-cup.png' alt='')
                         div Breakfast
                     .container_icon.middle
                         .icon
-                            img(src='images/icons/plane3.png', alt)
+                            img(src='../img/icons/plane3.png' alt='')
                         div Airport pickup
                     .container_icon.bottom
                         .icon
-                            img(src='images/icons/position.png', alt)
+                            img(src='../img/icons/position.png' alt='')
                         div City guide
                     .container_icon.middle
                         .icon
-                            img(src='images/icons/bbq.png', alt)
+                            img(src='../img/icons/bbq.png' alt='')
                         div BBQ party
                     .container_icon.top
                         .icon
-                            img(src='images/icons/room.png', alt)
+                            img(src='../img/icons/room.png' alt='')
                         div Luxury room
-                .core_features_title Core Features
+                .core_features_subtitle.subtitle Facilities
+                .core_features_title.title Core Features
                 .container_offers
-                    .item.img.img1.
-                    
-                    
+                    .item.img.img1
                     .item
                         .icon
-                            img(src='images/icons/clock.png', alt)
+                            img(src='../img/icons/services_features/clock.png' alt='')
                         .title Quiet Hours
                         p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, unde?
-                    .item.img.img2.
-                    
-                    
+                    .item.img.img2
                     .item
                         .icon
-                            img(src='images/icons/delete_clock.png', alt)
+                            img(src='../img/icons/services_features/clock_delete.png' alt='')
                         .title Free Cancellation
                         p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, unde?
-                    .item.img.img3.
-                    
-                    
+                    .item.img.img3
                     .item
                         .icon
-                            //  <img src="images/icons/percentage.png" alt=""> 
-                            img(src='images/icons/percentage.png', alt)
+                            // <img src="../img/icons/percentage.png" alt="">
+                            i.fa.fa-percent.features-icon.colorBrown(style='opacity: 0.8' aria-hidden='true')
                         .title Special Offers
                         p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, unde?
-            //  ROOM TYPE 
+            // CARROUSEL
+            section.carousel
+                .glider_container
+                    .glider
+                        .glider-item
+                            img(src='../img/carousel/carrusel_1.jpg' alt='carousel1')
+                        .glider-item
+                            img(src='../img/carousel/carrusel_2.jpg' alt='carousel2')
+                        .glider-item
+                            img(src='../img/carousel/carrusel_3.jpg' alt='carousel3')
+                        .glider-item
+                            img(src='../img/carousel/carrusel_4.jpg' alt='carousel4')
+                        .glider-item
+                            img(src='../img/carousel/carrusel_5.jpg' alt='carousel5')
+                        .glider-item
+                            img(src='../img/carousel/carrusel_6.jpg' alt='carousel6')
+                    button.glider-prev(aria-label='Previous')
+                        i.fas.fa-chevron-left
+                    button.glider-next(aria-label='Next')
+                        i.fas.fa-chevron-right
+                    .dots(role='tablist')
+            // ROOM TYPE
             section.room_type
                 .subtitle Room type
                 .title Inspired lodging
@@ -107,48 +126,56 @@ block content
                     .room.junior
                         .subtitle
                             i.far.fa-calendar-alt
-                                |  12 ROOMS
+                            |  12 ROOMS
                         .title Junior Suite
                     .room.junior
                         .subtitle
                             i.far.fa-calendar-alt
-                                |  12 ROOMS
+                            |  12 ROOMS
                         .title Junior Suite
                     .room.hallFame
                         .subtitle
                             i.far.fa-calendar-alt
-                                | 03 ROOMS
+                            | 03 ROOMS
                         .title Luxury Hall Of Fame
-            //  CALL TO ACTION 
+            // CALL TO ACTION
             section.call_action
                 .subtitle Call to action
                 .title The thin Escape
                 div
                     .header
                         .desc Miranda has everything for your trip & every single thing.
-                        .btn
-                            button.button.button_black Take a tour
+                        // <div class="btn"><button class="button button_black">Take a tour</button></div>
                     .actions_grid
                         .container_icon
                             .icon
-                                img(src='images/icons/plane3.png', alt)
+                                img(src='../img/icons/plane3.png' alt='')
                         div
                             .title Easy & Free Transport
-                            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut fugit rem doloremque molestias quas ipsa modi, similique consectetur consequatur ad.
+                            p
+                                | Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                | Ut fugit rem doloremque molestias quas ipsa modi, similique
+                                | consectetur consequatur ad.
                         .container_icon
                             .icon
-                                img(src='images/icons/burger_chips.png', alt)
+                                img(src='../img/icons/burger_chips.png' alt='')
                         div
                             .title Clean & Fresh Food
-                            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut fugit rem doloremque molestias quas ipsa modi, similique consectetur consequatur ad.
+                            p
+                                | Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                | Ut fugit rem doloremque molestias quas ipsa modi, similique
+                                | consectetur consequatur ad.
                         .container_icon
                             .icon
-                                img(src='images/icons/pool_stairs.png', alt)
+                                img(src='../img/icons/pool_stairs.png' alt='')
                         div
                             .title Play ground & Swimming Pool
-                            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut fugit rem doloremque molestias quas ipsa modi, similique consectetur consequatur ad.
+                            p
+                                | Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                | Ut fugit rem doloremque molestias quas ipsa modi, similique
+                                | consectetur consequatur ad.
                     .footer_bar
-            //  TESTIMONIALS 
+            // TESTIMONIALS
             section.testimonials
                 .head
                     .subtitle Testimonials
@@ -158,28 +185,33 @@ block content
                         .img_container
                             .check
                                 i.fas.fa-check
-                            img(src='images/testimonials/portrait_1.jpg', alt)
+                            img(src='../img/testimonials/portrait_1.jpg' alt='')
                         .name Rosalina D. William
                         .role Founder, QUX CO.
-                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quaerat maxime unde atque dolorem corrupti.
+                        p
+                            | Lorem ipsum dolor sit amet consectetur
+                            | adipisicing elit. Amet quaerat maxime unde
+                            | atque dolorem corrupti.
                     .client_card
                         .img_container
                             .check
                                 i.fas.fa-check
-                            img(src='images/testimonials/portrait_2.jpg', alt)
+                            img(src='../img/testimonials/portrait_2.jpg' alt='')
                         .name Donald H. Hilixer
                         .role Founder, QUX CO.
-                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quaerat maxime unde atque dolorem corrupti.
-                .info.
-                   
-                    Each of our nine lovely double guest rooms feature a private bath, wi-fi, cable television and include full breakfast
-                
-            //  NEWS FEEDS 
+                        p
+                            | Lorem ipsum dolor sit amet consectetur
+                            | adipisicing elit. Amet quaerat maxime unde
+                            | atque dolorem corrupti.
+                .info
+                    | Each of our nine lovely double guest rooms feature a private
+                    | bath, wi-fi, cable television and include full breakfast
+            // NEWS FEED
             section.new_feeds
                 .head
                     .titles
                         .subtitle Blog
-                        .title News Feeds
+                        .title News Feed
                     .arrows
                         .arrow.arrow_left
                             i.fas.fa-arrow-left
@@ -197,16 +229,37 @@ block content
                                     i.far.fa-user
                                     |  By Admin
                             .title Each of our 8 double rooms has its own distinct.
-                            p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio sit pariatur, dolore nisi labore corporis.
+                            p
+                                | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
+                                | sit pariatur, dolore nisi labore corporis.
                     .body_item.item2
                         .feed_img
                         .content
                             .subtitle
                                 div
                                     i.far.fa-calendar-alt
-                                        |  23rd March 2019
+                                    |  23rd March 2019
                                 div
                                     i.far.fa-user
-                                        |  By Admin
+                                    |  By Admin
                             .title Each of our 8 double rooms has its own distinct.
-                            p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio sit pariatur, dolore nisi labore corporis.    
+                            p
+                                | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
+                                | sit pariatur, dolore nisi labore corporis.
+                    .body_item.item3
+                        .feed_img
+                        .content
+                            .subtitle
+                                div
+                                    i.far.fa-calendar-alt
+                                    |  23rd March 2019
+                                div
+                                    i.far.fa-user
+                                    |  By Admin
+                            .title Each of our 8 double rooms has its own distinct.
+                            p
+                                | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
+                                | sit pariatur, dolore nisi labore corporis.
+    // ANCHOR TOP
+    a.anchorTop(href='#top')
+        i.fas.fa-arrow-up

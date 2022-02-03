@@ -2,133 +2,157 @@ extends layout
 
 block content
 
-	body
-		// MAIN CONTENT
-		main#about_us
-			// MAIN CONTENT - HEADER
-			section.mainContent_header
-				// <div class="subtitle">The ultimate luxury experience</div>
-				.title About us
-				.buttons
-					button.button.button_brown Take a tour
-					button.button.button_grey Learn more
-			// MAIN CONTENT - BODY
-			.mainContent_body
-				// PRESENTATION
-				section.presentation
-					.desc
-						| Hello, Out hotel has been present for over 20 years. We make the best for all our customers.
-					.video
-						iframe(src='https://www.youtube.com/embed/Bu3Doe45lcU?start=25' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
-				// SERVICES
-				section.services
-					.container_icons
-						.container_icon
-							.icon.top
-								img(src='images/icons/coffee-cup.png' alt='')
-							div Breakfast
-						.container_icon.middle
-							.icon
-								img(src='images/icons/plane3.png' alt='')
-							div Airport pickup
-						.container_icon.bottom
-							.icon
-								img(src='images/icons/position.png' alt='')
-							div City guide
-						.container_icon.middle
-							.icon
-								img(src='images/icons/bbq.png' alt='')
-							div BBQ party
-						.container_icon.top
-							.icon
-								img(src='images/icons/room.png' alt='')
-							div Luxury room
-					.container_offers
-						.item.img.img1
-						.item
-							.icon
-								img(src='images/icons/clock.png' alt='')
-							.title Quiet Hours
-							p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, unde?
-						.item.img.img2
-						.item
-							.icon
-								img(src='images/icons/delete_clock.png' alt='')
-							.title Free Cancellation
-							p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, unde?
-						.item.img.img3
-						.item
-							.icon
-								img(src='images/icons/percentage.png' alt='')
-							.title Special Offers
-							p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, unde?
-				// COUNTER
-				section.counter
-					.head
-						.subtitle Counter
-						.title Some Fun Facts
-					.facts
-						.fact
-							.firstIcon
-								i.fas.fa-user-check.fa-fw
-							.text
-								.mainText 8000
-								.secondarytext Happy users
-							.lastIcon
-								i.fas.fa-long-arrow-alt-right
-						.fact
-							.firstIcon
-								i.fas.fa-thumbs-up
-							.text
-								.mainText 10 M
-								.secondarytext Reviews & appreciate
-							.lastIcon
-								i.fas.fa-long-arrow-alt-right
-						.fact
-							.firstIcon
-								i.fas.fa-suitcase.fa-fw
-							.text
-								.mainText 100
-								.secondarytext Country coverage
-							.lastIcon
-								i.fas.fa-long-arrow-alt-right
-				// NEW FEEDS
-				section.new_feeds
-					.head
-						.titles
-							.subtitle Blog
-							.title News Feeds
-						.arrows
-							.arrow.arrow_left
-								i.fas.fa-arrow-left
-							.arrow.arrow_right
-								i.fas.fa-arrow-right
-					.body
-						.body_item.item1
-							.feed_img
-							.content
-								.subtitle
-									div
-										i.far.fa-calendar-alt
-										|  23rd March 2019
-									div
-										i.far.fa-user
-										|  By Admin
-								.title Each of our 8 double rooms has its own distinct.
-								p
-									| Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
-									| sit pariatur, dolore nisi labore corporis.
-						.body_item.item2
-							.feed_img
-							.content
-								.subtitle
-									div
-										i.far.fa-calendar-alt
-										|  23rd March 2019
-									div
-										i.far.fa-user
-										|  By Admin
-								.title Each of our 8 double rooms has its own distinct.
-								p
-									| Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
-									| sit pariatur, dolore nisi labore corporis.
+	// MAIN CONTENT
+	main#about_us
+		// MAIN CONTENT - HEADER
+		section.mainContent_header
+			// <div class="subtitle">The ultimate luxury experience</div>
+			.title About us
+			.buttons
+				button.button.button_brown Take a tour
+				button.button.button_grey Learn more
+		// MAIN CONTENT - BODY
+		.mainContent_body
+			// PRESENTATION
+			section.presentation
+				.desc
+					| Hello, Our hotel has been present for over 20 years. We make the best for all our customers.
+				.video
+					iframe(src='https://www.youtube.com/embed/Bu3Doe45lcU?start=25' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+			// SERVICES
+			section.services
+				.subtitle
+					span Since
+					span.colorBrown 1994
+				.title Situated in prime position at the foot of the slopes of couchevel moriond.
+				// ICONS
+				.container_icons
+					.container_icon.top
+						.icon
+							img(src='../img/icons/coffee-cup.png' alt='')
+						div Breakfast
+					.container_icon.middle
+						.icon
+							img(src='../img/icons/plane3.png' alt='')
+						div Airport pickup
+					.container_icon.bottom
+						.icon
+							img(src='../img/icons/position.png' alt='')
+						div City guide
+					.container_icon.middle
+						.icon
+							img(src='../img/icons/bbq.png' alt='')
+						div BBQ party
+					.container_icon.top
+						.icon
+							img(src='../img/icons/room.png' alt='')
+						div Luxury room
+				.core_features_subtitle.subtitle Facilities
+				.core_features_title.title Core Features
+				.container_offers
+					.item.img.img1
+					.item
+						.icon
+							img(src='../img/icons/services_features/clock.png' alt='')
+						.title Quiet Hours
+						p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, unde?
+					.item.img.img2
+					.item
+						.icon
+							img(src='../img/icons/services_features/clock_delete.png' alt='')
+						.title Free Cancellation
+						p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, unde?
+					.item.img.img3
+					.item
+						.icon
+							// <img src="../img/icons/percentage.png" alt="">
+							i.fa.fa-percent.features-icon.colorBrown(style='opacity: 0.8' aria-hidden='true')
+						.title Special Offers
+						p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, unde?
+			// COUNTER
+			section.counter
+				.head
+					.subtitle Counter
+					.title Some Fun Facts
+				.facts
+					.fact
+						.firstIcon
+							i.fas.fa-user-check.fa-fw
+						.text
+							.mainText 8000
+							.secondarytext Happy users
+						.lastIcon
+							i.fas.fa-long-arrow-alt-right
+					.fact
+						.firstIcon
+							i.fas.fa-thumbs-up
+						.text
+							.mainText 10 M
+							.secondarytext Reviews & appreciate
+						.lastIcon
+							i.fas.fa-long-arrow-alt-right
+					.fact
+						.firstIcon
+							i.fas.fa-suitcase.fa-fw
+						.text
+							.mainText 100
+							.secondarytext Country coverage
+						.lastIcon
+							i.fas.fa-long-arrow-alt-right
+			// NEWS FEED
+			section.new_feeds
+				.head
+					.titles
+						.subtitle Blog
+						.title News Feed
+					.arrows
+						.arrow.arrow_left
+							i.fas.fa-arrow-left
+						.arrow.arrow_right
+							i.fas.fa-arrow-right
+				.body
+					.body_item.item1
+						.feed_img
+						.content
+							.subtitle
+								div
+									i.far.fa-calendar-alt
+									|  23rd March 2019
+								div
+									i.far.fa-user
+									|  By Admin
+							.title Each of our 8 double rooms has its own distinct.
+							p
+								| Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
+								| sit pariatur, dolore nisi labore corporis.
+					.body_item.item2
+						.feed_img
+						.content
+							.subtitle
+								div
+									i.far.fa-calendar-alt
+									|  23rd March 2019
+								div
+									i.far.fa-user
+									|  By Admin
+							.title Each of our 8 double rooms has its own distinct.
+							p
+								| Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
+								| sit pariatur, dolore nisi labore corporis.
+					.body_item.item3
+						.feed_img
+						.content
+							.subtitle
+								div
+									i.far.fa-calendar-alt
+									|  23rd March 2019
+								div
+									i.far.fa-user
+									|  By Admin
+							.title Each of our 8 double rooms has its own distinct.
+							p
+								| Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
+								| sit pariatur, dolore nisi labore corporis.
+	// ANCHOR TOP
+	a.anchorTop(href='#top')
+		i.fas.fa-arrow-up

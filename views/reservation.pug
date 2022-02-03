@@ -6,21 +6,23 @@ block content
         main.mainContent
             // MAIN CONTENT - HEADER
             section.mainContent_header
-                .subtitle The ultimate luxury
-                .title Ultimate Room
+                .subtitle
+                    | The ultimate luxury
+                .title
+                    | Ultimate Room
                 .secondary_nav
                     div
                         span
-                            a(href='') Home
+                            a(href='./home.html') Home
                             |  |
-                        a(href='') Room Details
+                        |  Room Details
             // HEADER 2 + AVAILABILITY
             section.header2_availability
                 // MAIN CONTENT - HEADER 2
                 section.mainContent_header2
                     .extra-banner
                         .title
-                            h1 Luxury Double Bed
+                            h1 Habitación XXX
                         .price
                             p
                                 | $345
@@ -33,10 +35,10 @@ block content
                     form(action='')
                         .check-in.form-control
                             label(for='checkIn') Check In
-                            input.checkIn(name='checkIn' type='date' placeholder='Check in')
+                            input.checkIn.flatpickr(name='checkIn' type='date' placeholder='Check in')
                         .check-out.form-control
                             label(for='checkOut') Check Out
-                            input.checkOut(name='checkOut' type='date' placeholder='Check out')
+                            input.checkOut.flatpickr(name='checkOut' type='date' placeholder='Check out')
                         .first_name.form-control
                             label(for='first_name') Fisrt Name
                             input.first_name(name='first_name' type='text' placeholder='First name')
@@ -47,15 +49,20 @@ block content
                             label(for='email') Email
                             input.email(name='email' type='email' placeholder='Email')
                         .tlf.form-control
-                            label(for='tlf') Tlf
-                            input.tlf(name='tlf' type='number' placeholder='Tlf')
+                            label(for='tlf') Phone
+                            input.tlf(name='phone' type='text' placeholder='Phone')
                         .comment.form-control.textarea-control
                             label(for='comment') Comment
                             textarea#comment(name='comment' cols='30' rows='5' placeholder='Comment')
                     .check-button
-                        button.checkButton(type='button') CHECK AVAILABILITY
+                        button.checkButton.button.button_brown(type='button') CHECK AVAILABILITY
             // ARTICLE
             section.article
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis inventore rem quibusdam perspiciatis
+                    | facilis delectus eum veniam explicabo libero, magnam reprehenderit consectetur dicta sit ratione, optio
+                    | porro tempora rerum tempore, voluptate nemo? Doloribus soluta facilis ea animi voluptatem iusto eius
+                    | reiciendis ipsam dolor unde, ut, deserunt deleniti! Temporibus alias tenetur aperiam reprehenderit!
                 p
                     | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis inventore rem quibusdam perspiciatis
                     | facilis delectus eum veniam explicabo libero, magnam reprehenderit consectetur dicta sit ratione, optio
@@ -135,7 +142,7 @@ block content
                         .img_container
                             .check
                                 i.fas.fa-check
-                            img(src='images/testimonials/portrait_1.jpg' alt='')
+                            img(src='../img/testimonials/portrait_1.jpg' alt='')
                         .name Rosalina D. William
                         .role Founder, QUX CO.
                         p
@@ -146,7 +153,7 @@ block content
                         .img_container
                             .check
                                 i.fas.fa-check
-                            img(src='images/testimonials/portrait_2.jpg' alt='')
+                            img(src='../img/testimonials/portrait_2.jpg' alt='')
                         .name Donald H. Hilixer
                         .role Founder, QUX CO.
                         p
@@ -170,56 +177,65 @@ block content
             section.related_rooms
                 h2 Related Rooms
                 .related_room
-                    .room-image
-                        .icons-bar
-                            ul
-                                li
-                                    i.fas.fa-bed
-                                li
-                                    i.fas.fa-wifi
-                                li
-                                    i.fas.fa-car-side
-                                li
-                                    i.fas.fa-coffee
-                                li
-                                    i.fas.fa-utensils
-                                li
-                                    i.fas.fa-shower
-                                li
-                                    i.fas.fa-tv
+                    a(href='./reservation.html')
+                        .room-image
+                            .icons-bar
+                                ul
+                                    li
+                                        i.fas.fa-bed
+                                    li
+                                        i.fas.fa-wifi
+                                    li
+                                        i.fas.fa-car-side
+                                    li
+                                        i.fas.fa-coffee
+                                    li
+                                        i.fas.fa-utensils
+                                    li
+                                        i.fas.fa-shower
+                                    li
+                                        i.fas.fa-tv
                     .room_footer
-                        h3 Minimal Duplex Room
+                        a.room_footer_title(href='./reservation.html')
+                            h3 Minimal Duplex Room
                         p
                             | Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa molestiae esse tempore quo
                         .info
                             .price
                                 | $345
                                 span /Night
-                            .booking Booking Now
+                            a(href='./reservation.html')
+                                .booking Booking Now
                 .related_room
-                    .room-image
-                        .icons-bar
-                            ul
-                                li
-                                    i.fas.fa-bed
-                                li
-                                    i.fas.fa-wifi
-                                li
-                                    i.fas.fa-car-side
-                                li
-                                    i.fas.fa-coffee
-                                li
-                                    i.fas.fa-utensils
-                                li
-                                    i.fas.fa-shower
-                                li
-                                    i.fas.fa-tv
+                    a(href='./reservation.html')
+                        .room-image
+                            .icons-bar
+                                ul
+                                    li
+                                        i.fas.fa-bed
+                                    li
+                                        i.fas.fa-wifi
+                                    li
+                                        i.fas.fa-car-side
+                                    li
+                                        i.fas.fa-coffee
+                                    li
+                                        i.fas.fa-utensils
+                                    li
+                                        i.fas.fa-shower
+                                    li
+                                        i.fas.fa-tv
                     .room_footer
-                        h3 Minimal Duplex Room
+                        a.room_footer_title(href='./reservation.html')
+                            h3 Minimal Duplex Room
                         p
                             | Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa molestiae esse tempore quo
                         .info
                             .price
                                 | $345
                                 span /Night
-                            .booking Booking Now
+                            a(href='./reservation.html')
+                                .booking Booking Now
+        // ANCHOR TOP
+        a.anchorTop(href='#top')
+            i.fas.fa-arrow-up
