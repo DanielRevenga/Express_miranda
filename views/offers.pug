@@ -13,7 +13,7 @@ block content
             .secondary_nav
                 div
                     span
-                        a(href='./home.html') Home
+                        a(href='./') Home
                         |  |
                     |  Rooms
         // MAIN CONTENT - BODY
@@ -23,32 +23,32 @@ block content
                 each room in rooms
                     // ROOM
                     .room
-                    a(href='./reservation.html')
-                        .room_img
-                    .room_body
-                        .icon_list
-                            ul
-                                li
-                                    i.fas.fa-bed
-                                li
-                                    i.fas.fa-wifi
-                                li
-                                    i.fas.fa-car-side
-                                li
-                                    i.fas.fa-coffee
-                                li
-                                    i.fas.fa-utensils
-                                li
-                                    i.fas.fa-shower
-                                li
-                                    i.fas.fa-tv
-                        .std_info
-                            a(href='./reservation.html')
-                                .title Minimal Duplex Room
-                            p
-                                | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                | Quis inventore voluptatem nesciunt accusamus provident
-                                | aspernatur velit assumenda porro iure unde.
+                        a(href=`./reservation/${ room._id }`)
+                            .room_img
+                        .room_body
+                            .icon_list
+                                ul
+                                    li
+                                        i.fas.fa-bed
+                                    li
+                                        i.fas.fa-wifi
+                                    li
+                                        i.fas.fa-car-side
+                                    li
+                                        i.fas.fa-coffee
+                                    li
+                                        i.fas.fa-utensils
+                                    li
+                                        i.fas.fa-shower
+                                    li
+                                        i.fas.fa-tv
+                            .std_info
+                                a(href='./reservation')
+                                    .title Minimal Duplex Room
+                                p
+                                    | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    | Quis inventore voluptatem nesciunt accusamus provident
+                                    | aspernatur velit assumenda porro iure unde.
 
     // ANCHOR TOP
     a.anchorTop(href='#top')
