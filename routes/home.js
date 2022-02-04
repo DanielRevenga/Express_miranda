@@ -37,8 +37,9 @@ router.get('/room_grid', async (req, res, next) => {
 
 router.get('/offers', async (req, res, next) => {
   try {
-    const rooms = await Room.find();
-    res.render('offers', { title: 'Room Offers', rooms });
+    const rooms2 = await Room.find();
+    // @ts-ignore
+    res.render('offers', { title: 'Room Offers', rooms: rooms2} );
     
   } catch (error) {
     console.log(error);

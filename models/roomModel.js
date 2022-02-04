@@ -23,7 +23,7 @@ const roomSchema = new Schema({
     },
     status: {
         type: String,
-        enum: ["occupied", "not occupied"]
+        enum: ["available", "occupied"]
     },
     image: {
         type: String,

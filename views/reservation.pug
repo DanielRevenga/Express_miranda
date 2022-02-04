@@ -142,7 +142,7 @@ block content
                         .img_container
                             .check
                                 i.fas.fa-check
-                            img(src='../img/testimonials/portrait_1.jpg' alt='')
+                            img(src='../images/testimonials/portrait_1.jpg' alt='')
                         .name Rosalina D. William
                         .role Founder, QUX CO.
                         p
@@ -153,7 +153,7 @@ block content
                         .img_container
                             .check
                                 i.fas.fa-check
-                            img(src='../img/testimonials/portrait_2.jpg' alt='')
+                            img(src='../images/testimonials/portrait_2.jpg' alt='')
                         .name Donald H. Hilixer
                         .role Founder, QUX CO.
                         p
@@ -177,7 +177,7 @@ block content
             section.related_rooms
                 h2 Related Rooms
                 .related_room
-                    a(href='./reservation')
+                    a(href=`./reservation/${ room._id }`)
                         .room-image
                             .icons-bar
                                 ul
@@ -196,7 +196,7 @@ block content
                                     li
                                         i.fas.fa-tv
                     .room_footer
-                        a.room_footer_title(href='./reservation')
+                        a.room_footer_title(href=`./reservation/${ room._id }`)
                             h3 Minimal Duplex Room
                         p
                             | Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa molestiae esse tempore quo
@@ -204,10 +204,10 @@ block content
                             .price
                                 | $345
                                 span /Night
-                            a(href='./reservation')
+                            a(href=`./reservation/${ room._id }`)
                                 .booking Booking Now
                 .related_room
-                    a(href='./reservation')
+                    a(href=`./reservation/${ room._id }`)
                         .room-image
                             .icons-bar
                                 ul
@@ -226,7 +226,7 @@ block content
                                     li
                                         i.fas.fa-tv
                     .room_footer
-                        a.room_footer_title(href='./reservation')
+                        a.room_footer_title(href=`./reservation/${ room._id }`)
                             h3 Minimal Duplex Room
                         p
                             | Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa molestiae esse tempore quo
@@ -234,7 +234,7 @@ block content
                             .price
                                 | $345
                                 span /Night
-                            a(href='./reservation')
+                            a(href=`./reservation/${ room._id }`)
                                 .booking Booking Now
         // ANCHOR TOP
         a.anchorTop(href='#top')

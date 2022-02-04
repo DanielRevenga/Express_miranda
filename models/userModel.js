@@ -28,6 +28,10 @@ const userSchema = new Schema({
         type: String,
         default: null
     },
+    email: {
+        type: String,
+        default: null
+    },
     job: {
         type: String,
         default: null

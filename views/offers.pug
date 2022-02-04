@@ -27,6 +27,7 @@ block content
                             .room_img
                         .room_body
                             .icon_list
+                                
                                 ul
                                     li
                                         i.fas.fa-bed
@@ -44,11 +45,19 @@ block content
                                         i.fas.fa-tv
                             .std_info
                                 a(href='./reservation')
-                                    .title Minimal Duplex Room
+                                    .title=room.room_type_type
+                                    
                                 p
                                     | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                     | Quis inventore voluptatem nesciunt accusamus provident
                                     | aspernatur velit assumenda porro iure unde.
+                        .extra_info
+                            .price=`| $$${room.price}`
+                                
+                                span /Night
+                            .hl
+                            a(href=`./reservation/${ room._id }`)
+                                .booking Booking Now
 
     // ANCHOR TOP
     a.anchorTop(href='#top')
